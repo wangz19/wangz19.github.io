@@ -7,17 +7,17 @@
 
     
 
-    <title>Hello World | Zehai&#39;s page</title>
+    <title>Zehai&#39;s page</title>
     <meta name="author" content="Zehai Wang" />
     <meta name="version" content="1.0.0" />
     <meta name="keywords" content="undefined" />
-    <meta name="description" content="I am using Hexo as framework to build my website! Check documentation for more info.
-Quick StartCreate a new post1$ hexo new &quot;My New Post&quot;
-More info: Writing
-Run server1$ hexo server
-More info: Server
-Generate static files1$ hexo generate
-More info: " />
+    <meta name="description" content="title: Evaluating the Machine Learning algorithmdate: 2018-03-16 10:27:10tags:
+
+Evaluating the hypothesis
+The hypothesis may be overfitting the training sets (~70% data set). 
+Evaluation of test error:
+
+Linear regression: $$J_{test}(\theta) = 1/{2m_{" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
     <meta name="baidu-site-verification" content="F0CXvmUgA9" />
@@ -83,7 +83,7 @@ More info: " />
         
 
         
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick-Start"><span class="toc-number">1.</span> <span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-a-new-post"><span class="toc-number">1.1.</span> <span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run-server"><span class="toc-number">1.2.</span> <span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate-static-files"><span class="toc-number">1.3.</span> <span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy-to-remote-sites"><span class="toc-number">1.4.</span> <span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Design-ML-systems-i-e"><span class="toc-number">1.</span> <span class="toc-text">Design ML systems, i.e</span></a></li></ol>
         
     </div>
 </aside>
@@ -92,36 +92,73 @@ More info: " />
 
         <div id="content" class="content"><article class="article" itemscope itemprop="blogPost">
     
-    <header class="article-header">
-        
-        <h1 itemprop="name">
-            Hello World
-        </h1>
-        
-        <div class="article-meta clearfix">
-            <a class="article-date" href="/2018/02/16/hello-world/">
-    
-    <i class="icon-calendar"></i>
-    
-    <time datetime="2018-02-16T15:23:07.754Z" itemprop="datePublished">2018-02-16</time>
-</a>
-
-            
-
-        </div>
-    </header>
-    
     <section class="article-body markdown-body">
         
-        <p>I am using <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> as framework to build my website! Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+        <p>title: Evaluating the Machine Learning algorithm<br>date: 2018-03-16 10:27:10<br>tags:</p>
+<ul>
+<li><p><strong>Evaluating the hypothesis</strong></p>
+<p>The hypothesis may be overfitting the training sets (~70% data set). </p>
+<p>Evaluation of test error:</p>
+<ul>
+<li><p>Linear regression: $$J_{test}(\theta) = 1/{2m_{test}}\sum_{i=1}^{m_{test}}(h_\theta(x_{test}^{(i)}-y_{test}^{(i)})^2])$$ </p>
+</li>
+<li><p>Classicfication: $$J_{error}(\theta) = 1/{m_{test}}\sum_{i=1}^{m_{test}}err(h_\theta(x_{test}^{(i)}),y_{test}^{(i)})$$ </p>
+<p>where, $$err(h_\theta(x),y) = 1$$, if $h_{\theta}(x)&gt; 0.5$ $and$ $y= 0$ or $h_{\theta}(x)&lt;0.5$ $and$ $ y= 1$ ( make sure how to write otherwise)</p>
+</li>
+<li><p>Diagnosing bias or variance</p>
+</li>
+</ul>
+<table class="table">
+<thead>
+<tr>
+<th style="text-align:center">High Bias</th>
+<th style="text-align:center">High Variation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Under-fitting</td>
+<td style="text-align:center">Overfitting</td>
+</tr>
+<tr>
+<td style="text-align:center">$J_{train}(\theta)$  is high; $J_{cv}(\theta)\approx J_{train}(\theta) $</td>
+<td style="text-align:center">$J_{train}(\theta)$  is low; $J_{cv}(\theta) &gt;&gt; J_{train}(\theta) $</td>
+</tr>
+<tr>
+<td style="text-align:center">decrease $\lambda$; more features; adding polynomial features</td>
+<td style="text-align:center">increase $\lambda$ ; less features ; increase training set size</td>
+</tr>
+</tbody>
+</table>
+
+</li>
+</ul>
+<h3 id="Design-ML-systems-i-e"><a href="#Design-ML-systems-i-e" class="headerlink" title="Design ML systems, i.e"></a>Design ML systems, i.e</h3><p><em><strong>Spam email classifier</strong></em></p>
+<ul>
+<li>Define a feature: choose spam word list (deal, buy, discount, …), can be sorted alphabetically</li>
+<li>Vectorized the email content into a list and check if the spam words are in the list.</li>
+<li>Input of a training example consist a vector $X=[0,1,0,1…1,0]$ indicating whether the “spam words” apears.</li>
+<li>Optimization method:<ul>
+<li>More data</li>
+<li>Features based on header</li>
+<li>Spell checking</li>
+</ul>
+</li>
+<li>Error analysis<ul>
+<li>Start with simple, quick, dirty algorithm</li>
+<li>Plot learning curves</li>
+<li>Error analysis:<ul>
+<li>Manual examimation: <em>classification</em>, numerical evaluation, </li>
+<li>Skewed classes: ratio of positive and negative example is too extreme, —use precision/recall</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>F score</strong></p>
+<p>Precision (P) an d Recall number (R): recall here means (true positive) over No. of actural positive. To evaluate the current threshold, we use F score to evaluate.</p>
+<p>$$F_1=\frac{2PR}{(P+R)}​$$</p>
+<p>Always use cross validation set to test whether the</p>
 
         
     </section>
@@ -135,9 +172,9 @@ More info: " />
     <script>
     window.disqus_config = function () {
         this.language = 'en';
-        this.page.url = 'http://wangz19.github.io/2018/02/16/hello-world/';
-        this.page.title = 'Hello World';
-        this.page.identifier = '2018/02/16/hello-world/';
+        this.page.url = 'http://wangz19.github.io/2018/03/08/How to evaluate ML algorithm/';
+        this.page.title = '';
+        this.page.identifier = '2018/03/08/How to evaluate ML algorithm/';
     };
     (function() { // DON'T EDIT BELOW THIS LINE
         var d = document, s = d.createElement('script');

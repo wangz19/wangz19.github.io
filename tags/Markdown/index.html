@@ -7,7 +7,7 @@
 
     
 
-    <title>Archives: 2018 | Zehai&#39;s page</title>
+    <title>Mot-clé: Markdown | Zehai&#39;s page</title>
     <meta name="author" content="Zehai Wang" />
     <meta name="version" content="1.0.0" />
     <meta name="keywords" content="undefined" />
@@ -44,7 +44,7 @@
         
         
         
-        <li class="nav-item active">
+        <li class="nav-item">
             <a class="nav-link" href="/archives">Archives</a>
         </li>
         
@@ -102,125 +102,53 @@
 </header>
 
         <div id="content" class="content">
-
+    <article class="article" itemscope itemprop="blogPost">
     
-    
-    
-    
-    <section class="archives-wrap">
-    <div class="archive-year-wrap">
-    <a href="/archives/2018" class="archive-year">2018</a>
-    </div>
-    <ol class="archives">
-    
-
-    <li class="archive-section-item">
-        <article class="archive-article archive-type-post">
-    <div class="archive-article-inner">
-        <header class="archive-article-header">
-            <a href="/2018/03/16/Evaluation-and-optimization-of-a-machine-leaning-alogrithm/">Evaluation and optimization of a machine leaning alogrithm</a>
-            (<a class="article-date" href="/2018/03/16/Evaluation-and-optimization-of-a-machine-leaning-alogrithm/">
-    
-    <time datetime="2018-03-16T15:48:24.000Z" itemprop="datePublished">3/16</time>
-</a>
-)
-        </header>
-    </div>
-</article>
-    </li>
-
-    
-    
-
-    <li class="archive-section-item">
-        <article class="archive-article archive-type-post">
-    <div class="archive-article-inner">
-        <header class="archive-article-header">
+    <header class="article-header">
+        
+        <h1 itemprop="name">
             <a href="/2018/03/16/deploy-MathJax-on-Github-pages/">Deploy MathJax on your Github page</a>
-            (<a class="article-date" href="/2018/03/16/deploy-MathJax-on-Github-pages/">
+        </h1>
+        
+        <div class="article-meta clearfix">
+            <a class="article-date" href="/2018/03/16/deploy-MathJax-on-Github-pages/">
     
-    <time datetime="2018-03-16T14:37:10.000Z" itemprop="datePublished">3/16</time>
+    <i class="icon-calendar"></i>
+    
+    <time datetime="2018-03-16T14:37:10.000Z" itemprop="datePublished">2018-03-16</time>
 </a>
-)
-        </header>
-    </div>
+
+            
+<div class="article-tag-list">
+    <i class="icon-tag"></i>
+    <a class="article-tag-link" href="/tags/Markdown/">Markdown</a>
+</div>
+
+
+        </div>
+    </header>
+    
+    <section class="article-body markdown-body">
+        
+        <p>I have been struggling rendering math equations my github pages for a while, and finally got a good solution from a note posted on <a href="https://github.com/hexojs/hexo-math/issues/26" target="_blank" rel="noopener">the discussion here in zhongpu’s page</a>. I decided to share it here, to remind myself as well as helping others experience same problem.</p>
+<p>Depend on which theme you choose the developer may use different math renderer. Here I recommend <a href="https://www.mathjax.org/" target="_blank" rel="noopener">$mathjax$</a> which is compatible with the <a href="https://typora.io/" target="_blank" rel="noopener">typora</a> markdown editor.</p>
+<p>Basically, you have to first clear you hexo public folder</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br></pre></td></tr></table></figure>
+<p>and then install the install new renderer by bash command</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-render-mathjax --save</span><br></pre></td></tr></table></figure>
+<p>Run as root/administrator when necessary</p>
+<p>Advance features in typora (i.e. table) can also be rendered. Add plug-in </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-tag-table-bootstrap --save</span><br></pre></td></tr></table></figure>
+<p>and remember to include:</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;% table %&#125;</span><br><span class="line"></span><br><span class="line">... body of the table</span><br><span class="line"></span><br><span class="line">&#123;% endtable %&#125;</span><br></pre></td></tr></table></figure>
+<p>at the begining and end of your table.</p>
+<p>You can add more features like <a href="https://www.npmjs.com/package/hexo-filter-flowchart" target="_blank" rel="noopener">flowchat</a> and <a href="https://github.com/wzpan/hexo-renderer-pandoc" target="_blank" rel="noopener">pandoc</a> features in your page. Welcome new discussion if you find more exciting features.</p>
+
+        
+    </section>
 </article>
-    </li>
-
-    
-    
-
-    <li class="archive-section-item">
-        <article class="archive-article archive-type-post">
-    <div class="archive-article-inner">
-        <header class="archive-article-header">
-            <a href="/2018/03/16/SVM-notes/">SVM notes</a>
-            (<a class="article-date" href="/2018/03/16/SVM-notes/">
-    
-    <time datetime="2018-03-16T14:27:10.000Z" itemprop="datePublished">3/16</time>
-</a>
-)
-        </header>
-    </div>
-</article>
-    </li>
-
-    
-    
-
-    <li class="archive-section-item">
-        <article class="archive-article archive-type-post">
-    <div class="archive-article-inner">
-        <header class="archive-article-header">
-            <a href="/2018/02/18/Notes-on-Neural-Network/">Notes on Neural Network</a>
-            (<a class="article-date" href="/2018/02/18/Notes-on-Neural-Network/">
-    
-    <time datetime="2018-02-19T03:54:07.000Z" itemprop="datePublished">2/18</time>
-</a>
-)
-        </header>
-    </div>
-</article>
-    </li>
-
-    
-    
-
-    <li class="archive-section-item">
-        <article class="archive-article archive-type-post">
-    <div class="archive-article-inner">
-        <header class="archive-article-header">
-            <a href="/2018/02/16/Welcome-to-my-site/">Welcome to my site</a>
-            (<a class="article-date" href="/2018/02/16/Welcome-to-my-site/">
-    
-    <time datetime="2018-02-16T17:47:54.000Z" itemprop="datePublished">2/16</time>
-</a>
-)
-        </header>
-    </div>
-</article>
-    </li>
-
-    
-    
-
-    <li class="archive-section-item">
-        <article class="archive-article archive-type-post">
-    <div class="archive-article-inner">
-        <header class="archive-article-header">
-            <a href="/2018/02/16/hello-world/">Hello World</a>
-            (<a class="article-date" href="/2018/02/16/hello-world/">
-    
-    <time datetime="2018-02-16T15:23:07.754Z" itemprop="datePublished">2/16</time>
-</a>
-)
-        </header>
-    </div>
-</article>
-    </li>
 
 
-</ol></section>
 
 
 

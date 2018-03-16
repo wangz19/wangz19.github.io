@@ -7,11 +7,11 @@
 
     
 
-    <title>Tag: Machine Learning | Zehai&#39;s page</title>
+    <title>Mot-clé: Machine Learning | Zehai&#39;s page</title>
     <meta name="author" content="Zehai Wang" />
     <meta name="version" content="1.0.0" />
-    <meta name="keywords" content="" />
-    <meta name="description" content="" />
+    <meta name="keywords" content="undefined" />
+    <meta name="description" content="null" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
     <meta name="baidu-site-verification" content="F0CXvmUgA9" />
@@ -133,8 +133,8 @@
         <p>Neural Networks are old algorithms dated back to 80s and early 90s. It recent resurgence follows the explosion of computational power.</p>
 <ul>
 <li>Can be applied to learning problem with large feature space (n &gt; 1000)</li>
-<li>If the network has S~j units in layer j, S~j+1 units in layer j+1, then matrix of weight controlling function Θ is S~j+1~X (S~j~+1)</li>
-<li>h~Θ(x)~=a^j+1^=g(z^j+1^)</li>
+<li>If the network has $S_j$ units in layer j, $S_j+1$ units in layer j+1, then matrix of weight controlling function $\theta$ is $S_{j+1} (S_j+1) $</li>
+<li>Generally the hidden layers have same unit number</li>
 </ul>
 
         
@@ -180,5 +180,20 @@
         });
     </script>
 
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </body>
 </html>
