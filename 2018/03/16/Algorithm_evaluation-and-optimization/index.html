@@ -7,17 +7,11 @@
 
     
 
-    <title>Zehai&#39;s page</title>
+    <title>Evaluation and optimization of a machine leaning alogrithm | Zehai&#39;s page</title>
     <meta name="author" content="Zehai Wang" />
     <meta name="version" content="1.0.0" />
     <meta name="keywords" content="undefined" />
-    <meta name="description" content="title: Evaluating the Machine Learning algorithmdate: 2018-03-16 10:27:10tags:
-
-Evaluating the hypothesis
-The hypothesis may be overfitting the training sets (~70% data set). 
-Evaluation of test error:
-
-Linear regression: $$J_{test}(\theta) = 1/{2m_{" />
+    <meta name="description" content="The hypothesis may be overfitting the training sets (usually takes 70% data set). We need cross validation set and test set to evaluate and test current learning algorithm. Status of the algorithm can be evaluated using the learning curve ploting the" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
     <meta name="baidu-site-verification" content="F0CXvmUgA9" />
@@ -57,13 +51,13 @@ Linear regression: $$J_{test}(\theta) = 1/{2m_{" />
         
         
         <li class="nav-item">
-            <a class="nav-link" href="/back-end">DS</a>
+            <a class="nav-link" href="/back-end">Data Science</a>
         </li>
         
         
         
         <li class="nav-item">
-            <a class="nav-link" href="python:;">Tags</a>
+            <a class="nav-link" href="/zehai_tags">Tags</a>
         </li>
         
         
@@ -83,7 +77,7 @@ Linear regression: $$J_{test}(\theta) = 1/{2m_{" />
         
 
         
-        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Design-ML-systems-i-e"><span class="toc-number">1.</span> <span class="toc-text">Design ML systems, i.e</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Design-ML-systems-example"><span class="toc-number">1.</span> <span class="toc-text">Design ML systems, example</span></a></li></ol>
         
     </div>
 </aside>
@@ -92,17 +86,38 @@ Linear regression: $$J_{test}(\theta) = 1/{2m_{" />
 
         <div id="content" class="content"><article class="article" itemscope itemprop="blogPost">
     
+    <header class="article-header">
+        
+        <h1 itemprop="name">
+            Evaluation and optimization of a machine leaning alogrithm
+        </h1>
+        
+        <div class="article-meta clearfix">
+            <a class="article-date" href="/2018/03/16/Algorithm_evaluation-and-optimization/">
+    
+    <i class="icon-calendar"></i>
+    
+    <time datetime="2018-03-16T15:48:24.000Z" itemprop="datePublished">2018-03-16</time>
+</a>
+
+            
+<div class="article-tag-list">
+    <i class="icon-tag"></i>
+    <a class="article-tag-link" href="/tags/Machine-Learning/">Machine Learning</a>
+</div>
+
+
+        </div>
+    </header>
+    
     <section class="article-body markdown-body">
         
-        <p>title: Evaluating the Machine Learning algorithm<br>date: 2018-03-16 10:27:10<br>tags:</p>
-<ul>
-<li><p><strong>Evaluating the hypothesis</strong></p>
-<p>The hypothesis may be overfitting the training sets (~70% data set). </p>
+        <p>The hypothesis may be overfitting the training sets (usually takes 70% data set). We need cross validation set and test set to evaluate and test current learning algorithm. Status of the algorithm can be evaluated using the <a href="https://www.dataquest.io/blog/learning-curves-machine-learning/" target="_blank" rel="noopener">learning curve</a> ploting the cost of cross_validation and training sets.</p>
 <p>Evaluation of test error:</p>
 <ul>
-<li><p>Linear regression: $$J_{test}(\theta) = 1/{2m_{test}}\sum_{i=1}^{m_{test}}(h_\theta(x_{test}^{(i)}-y_{test}^{(i)})^2])$$ </p>
+<li><p>Linear regression: $$J_{test}(\theta) = \frac{1}{2m_{test}}\sum_{i=1}^{m_{test}}(h_\theta(x_{test}^{(i)}-y_{test}^{(i)})^2])$$ </p>
 </li>
-<li><p>Classicfication: $$J_{error}(\theta) = 1/{m_{test}}\sum_{i=1}^{m_{test}}err(h_\theta(x_{test}^{(i)}),y_{test}^{(i)})$$ </p>
+<li><p>Classicfication: $$J_{error}(\theta) = \frac{1}{m_{test}}\sum_{i=1}^{m_{test}}err(h_\theta(x_{test}^{(i)}),y_{test}^{(i)})$$ </p>
 <p>where, $$err(h_\theta(x),y) = 1$$, if $h_{\theta}(x)&gt; 0.5$ $and$ $y= 0$ or $h_{\theta}(x)&lt;0.5$ $and$ $ y= 1$ ( make sure how to write otherwise)</p>
 </li>
 <li><p>Diagnosing bias or variance</p>
@@ -125,15 +140,13 @@ Linear regression: $$J_{test}(\theta) = 1/{2m_{" />
 <td style="text-align:center">$J_{train}(\theta)$  is low; $J_{cv}(\theta) &gt;&gt; J_{train}(\theta) $</td>
 </tr>
 <tr>
-<td style="text-align:center">decrease $\lambda$; more features; adding polynomial features</td>
-<td style="text-align:center">increase $\lambda$ ; less features ; increase training set size</td>
+<td style="text-align:center"><strong>decrease $\lambda$</strong>; <strong>more features</strong>; <strong>Adding polynomial features</strong></td>
+<td style="text-align:center"><strong>increase $\lambda$ </strong>; <strong>Less features</strong> ; <strong>Increase training set size</strong></td>
 </tr>
 </tbody>
 </table>
 
-</li>
-</ul>
-<h3 id="Design-ML-systems-i-e"><a href="#Design-ML-systems-i-e" class="headerlink" title="Design ML systems, i.e"></a>Design ML systems, i.e</h3><p><em><strong>Spam email classifier</strong></em></p>
+<h3 id="Design-ML-systems-example"><a href="#Design-ML-systems-example" class="headerlink" title="Design ML systems, example"></a>Design ML systems, example</h3><p><em><strong>Spam email classifier</strong></em></p>
 <ul>
 <li>Define a feature: choose spam word list (deal, buy, discount, …), can be sorted alphabetically</li>
 <li>Vectorized the email content into a list and check if the spam words are in the list.</li>
@@ -156,8 +169,9 @@ Linear regression: $$J_{test}(\theta) = 1/{2m_{" />
 </li>
 </ul>
 <p><strong>F score</strong></p>
+<p>We need to define a proper threshold value as cutoff for our hypothesis (for instance, the usually choice of 0.5 in <a href="https://en.wikipedia.org/wiki/Logistic_regression" target="_blank" rel="noopener">logistic regression model</a>), $g(z)$ bigger than the threshold are consider true prediction. If the threshold is big ($&gt;0.5$) we have the risk of putting too much positive case in false prediction group, which is call <strong>high recall</strong>. Otherwise, if threshild is small, </p>
 <p>Precision (P) an d Recall number (R): recall here means (true positive) over No. of actural positive. To evaluate the current threshold, we use F score to evaluate.</p>
-<p>$$F_1=\frac{2PR}{(P+R)}​$$</p>
+<p>$$F_1=\frac{2PR}{(P+R)}$$</p>
 <p>Always use cross validation set to test whether the</p>
 
         
@@ -172,9 +186,9 @@ Linear regression: $$J_{test}(\theta) = 1/{2m_{" />
     <script>
     window.disqus_config = function () {
         this.language = 'en';
-        this.page.url = 'http://wangz19.github.io/2018/03/08/How to evaluate ML algorithm/';
-        this.page.title = '';
-        this.page.identifier = '2018/03/08/How to evaluate ML algorithm/';
+        this.page.url = 'http://wangz19.github.io/2018/03/16/Algorithm_evaluation-and-optimization/';
+        this.page.title = 'Evaluation and optimization of a machine leaning alogrithm';
+        this.page.identifier = '2018/03/16/Algorithm_evaluation-and-optimization/';
     };
     (function() { // DON'T EDIT BELOW THIS LINE
         var d = document, s = d.createElement('script');

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+    
+    <entry>
+      <title>about</title>
+      <link href="/2018/03/18/about/"/>
+      <content type="html"><![CDATA[]]></content>
+      
+      
+    </entry>
+    
+    <entry>
+      <title>Evaluation and optimization of a machine leaning alogrithm</title>
+      <link href="/2018/03/16/Algorithm_evaluation-and-optimization/"/>
+      <content type="html"><![CDATA[<p>The hypothesis may be overfitting the training sets (usually takes 70% data set). We need cross validation set and test set to evaluate and test current learning algorithm. Status of the algorithm can be evaluated using the <a href="https://www.dataquest.io/blog/learning-curves-machine-learning/" target="_blank" rel="noopener">learning curve</a> ploting the cost of cross_validation and training sets.</p><p>Evaluation of test error:</p><ul><li><p>Linear regression: $$J_{test}(\theta) = \frac{1}{2m_{test}}\sum_{i=1}^{m_{test}}(h_\theta(x_{test}^{(i)}-y_{test}^{(i)})^2])$$ </p></li><li><p>Classicfication: $$J_{error}(\theta) = \frac{1}{m_{test}}\sum_{i=1}^{m_{test}}err(h_\theta(x_{test}^{(i)}),y_{test}^{(i)})$$ </p><p>where, $$err(h_\theta(x),y) = 1$$, if $h_{\theta}(x)&gt; 0.5$ $and$ $y= 0$ or $h_{\theta}(x)&lt;0.5$ $and$ $ y= 1$ ( make sure how to write otherwise)</p></li><li><p>Diagnosing bias or variance</p></li></ul><table class="table"><thead><tr><th style="text-align:center">High Bias</th><th style="text-align:center">High Variation</th></tr></thead><tbody><tr><td style="text-align:center">Under-fitting</td><td style="text-align:center">Overfitting</td></tr><tr><td style="text-align:center">$J_{train}(\theta)$  is high; $J_{cv}(\theta)\approx J_{train}(\theta) $</td><td style="text-align:center">$J_{train}(\theta)$  is low; $J_{cv}(\theta) &gt;&gt; J_{train}(\theta) $</td></tr><tr><td style="text-align:center"><strong>decrease $\lambda$</strong>; <strong>more features</strong>; <strong>Adding polynomial features</strong></td><td style="text-align:center"><strong>increase $\lambda$ </strong>; <strong>Less features</strong> ; <strong>Increase training set size</strong></td></tr></tbody></table><h3 id="Design-ML-systems-example"><a href="#Design-ML-systems-example" class="headerlink" title="Design ML systems, example"></a>Design ML systems, example</h3><p><em><strong>Spam email classifier</strong></em></p><ul><li>Define a feature: choose spam word list (deal, buy, discount, …), can be sorted alphabetically</li><li>Vectorized the email content into a list and check if the spam words are in the list.</li><li>Input of a training example consist a vector $X=[0,1,0,1…1,0]$ indicating whether the “spam words” apears.</li><li>Optimization method:<ul><li>More data</li><li>Features based on header</li><li>Spell checking</li></ul></li><li>Error analysis<ul><li>Start with simple, quick, dirty algorithm</li><li>Plot learning curves</li><li>Error analysis:<ul><li>Manual examimation: <em>classification</em>, numerical evaluation, </li><li>Skewed classes: ratio of positive and negative example is too extreme, —use precision/recall</li></ul></li></ul></li></ul><p><strong>F score</strong></p><p>We need to define a proper threshold value as cutoff for our hypothesis (for instance, the usually choice of 0.5 in <a href="https://en.wikipedia.org/wiki/Logistic_regression" target="_blank" rel="noopener">logistic regression model</a>), $g(z)$ bigger than the threshold are consider true prediction. If the threshold is big ($&gt;0.5$) we have the risk of putting too much positive case in false prediction group, which is call <strong>high recall</strong>. Otherwise, if threshild is small, </p><p>Precision (P) an d Recall number (R): recall here means (true positive) over No. of actural positive. To evaluate the current threshold, we use F score to evaluate.</p><p>$$F_1=\frac{2PR}{(P+R)}$$</p><p>Always use cross validation set to test whether the</p>]]></content>
+      
+      
+        <tags>
+            
+            <tag> Machine Learning </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>Deploy MathJax on your Github page</title>
+      <link href="/2018/03/16/deploy-MathJax-on-Github-pages/"/>
+      <content type="html"><![CDATA[<p>I have been struggling rendering math equations my github pages for a while, and finally got a good solution from a note posted on <a href="https://github.com/hexojs/hexo-math/issues/26" target="_blank" rel="noopener">the discussion here in zhongpu’s page</a>. I decided to share it here, to remind myself as well as helping others experience same problem.</p><p>Depend on which theme you choose the developer may use different math renderer. Here I recommend <a href="https://www.mathjax.org/" target="_blank" rel="noopener">$mathjax$</a> which is compatible with the <a href="https://typora.io/" target="_blank" rel="noopener">typora</a> markdown editor.</p><p>Basically, you have to first clear you hexo public folder</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br></pre></td></tr></table></figure><p>and then install the install new renderer by bash command</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-render-mathjax --save</span><br></pre></td></tr></table></figure><p>Run as root/administrator when necessary</p><p>Advance features in typora (i.e. table) can also be rendered. Add plug-in </p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-tag-table-bootstrap --save</span><br></pre></td></tr></table></figure><p>and remember to include:</p><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;% table %&#125;</span><br><span class="line"></span><br><span class="line">... body of the table</span><br><span class="line"></span><br><span class="line">&#123;% endtable %&#125;</span><br></pre></td></tr></table></figure><p>at the begining and end of your table.</p><p>You can add more features like <a href="https://www.npmjs.com/package/hexo-filter-flowchart" target="_blank" rel="noopener">flowchat</a> and <a href="https://github.com/wzpan/hexo-renderer-pandoc" target="_blank" rel="noopener">pandoc</a> features in your page. Welcome new discussion if you find more exciting features.</p>]]></content>
+      
+      
+        <tags>
+            
+            <tag> Markdown </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>SVM notes</title>
+      <link href="/2018/03/16/SVM-notes/"/>
+      <content type="html"><![CDATA[]]></content>
+      
+      
+    </entry>
+    
+    <entry>
+      <title>Notes on Neural Network</title>
+      <link href="/2018/02/18/Notes-on-Neural-Network/"/>
+      <content type="html"><![CDATA[<p>Neural Networks are old algorithms dated back to 80s and early 90s. It recent resurgence follows the explosion of computational power.</p><ul><li>Can be applied to learning problem with large feature space (n &gt; 1000)</li><li>If the network has $S_j$ units in layer j, $S_j+1$ units in layer j+1, then matrix of weight controlling function $\theta$ is $S_{j+1} (S_j+1) $</li><li>Generally the hidden layers have same unit number</li></ul>]]></content>
+      
+      
+        <tags>
+            
+            <tag> Machine Learning </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>Welcome to my site</title>
+      <link href="/2018/02/16/Welcome-to-my-site/"/>
+      <content type="html"><![CDATA[]]></content>
+      
+      
+    </entry>
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="/2018/02/16/hello-world/"/>
+      <content type="html"><![CDATA[<p>I am using <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> as framework to build my website! Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+      
+      
+    </entry>
+    
+  
+  
+</search>

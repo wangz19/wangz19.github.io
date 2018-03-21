@@ -1,7 +1,7 @@
 .nav {
-  position: relative;
+  position: fixed;
   z-index: 80;
-  width: 80px;
+  width: 120px;
   height: 100%;
   background-color: #000;
   -webkit-animation: fade-in 1.6s both;
