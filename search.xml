@@ -3,6 +3,34 @@
   
     
     <entry>
+      <title>NCBI Hackathon &quot;You are awesome&quot;</title>
+      <link href="/2018/04/19/NCBI-Hackathon/"/>
+      <content type="html"><![CDATA[<p>It is a great honor to be elected to participate into the NIH NCBI hackathon. A lot of talented faculties, investigators from bioinformatics, neurology, immulogy, physics gather at NIH campus at Bethedas, MD. During the three-day event, my team evisioned a data pipeline that bridges clinical and academic word, called CLINT. </p><p><strong>CLINT</strong> as we vision, is a data gathering and query pipeline that will parse electronic medical record (EMR) reports, interface with Neurosynth to produce a list of symptoms correlated to structures or structures correlated to symptoms queried and return a report in an EMR ingestible format. More details can be found in our <a href="https://github.com/NCBI-Hackathons/clint" target="_blank" rel="noopener">GitHub repo</a>.</p><p><img src="/Users/zehaiwang/gitHubIO/wangz19.github.io/zehai_page.github.io/public/images/Busy_v4.jpg" alt="coding time"></p><p>Here is what I get from this awesome events</p><ol><li>“Tmux” is your friend when during with large dataset. During the hack, we use datasets from </li></ol>]]></content>
+      
+      
+        <tags>
+            
+            <tag> EMR, Data parsing </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>Federated Search</title>
+      <link href="/2018/04/11/Federated-Search/"/>
+      <content type="html"><![CDATA[<p>It is exciting to participate in the project “Prototyping federated cloud-search for biomedical data” in NIH hackathon. Here, I want to prepare some the conceptual and technical backgound needed for successful hacking.</p><p>The project seems to related to the Pilot phase explores using the cloud to access and share FAIR Biomedical Big Data. The objective to to let researchers to find the interact with data directly in the cloud directly.</p><p>###Concepts Define</p><p>First task is to understand the specific terminology employed in the project title. </p><p> “<em>Prototyping of Federated cloud search of biomedical data</em> “</p><p>Key parts of the project, hence, will be “<strong>Search</strong>“ in the <strong>federated cloud</strong> and apply the function directly on <strong>biomedical data</strong>. What is “Federated Search”? How to build search engine? What is the feature of biomedical data compare to other data?</p><p>“<strong>Federated Search</strong>“ : Deloying a seach over distributed and possibly heterogeneous data sets, and receiving in return a unified search results list. Federated cloud have alias as cloud federation and cloud clusters.</p><p>NIH is using a BD2K KnowEnG system deplyed on a public cloud infrastructure to provide easy acess to state of the and and compytationally intensive genomics analysis in a scalable and decentralized manner</p><p><strong>“Search engine”</strong> : bring us closer to data and database on the cloud</p><p><strong>“Biomedical data”</strong>: According to the <nih weisite="">(<a href="https://datascience.nih.gov/bioCADDIE)" target="_blank" rel="noopener">https://datascience.nih.gov/bioCADDIE)</a>. Since it is far more expensive to collect than to analyze data, it is essbecially valuable to anlysis biomedical data uploaded to the commens from the researches. The challanges to use the emerging biomedical data is that :</nih></p><h3 id="Expectation-from-the-community"><a href="#Expectation-from-the-community" class="headerlink" title="Expectation from the community"></a>Expectation from the community</h3><ol><li>Heterogeneous nature of biomedical data;</li><li>Lack of data discover infrastructure;</li><li>Security and authorization;</li><li>Sevice that suppot interoperability between exising biomedical data and tool repositories and portability between cloud service providers.</li><li>Store the data online will enable user to integrate scalable cloud computation and explore the result with interactive visualization.</li></ol>]]></content>
+      
+      
+        <tags>
+            
+            <tag> Cloud Search; </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
       <title>Advise for formal Python Programming</title>
       <link href="/2018/03/30/Advise-for-formal-Python-Programming/"/>
       <content type="html"><![CDATA[]]></content>

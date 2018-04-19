@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+
+    
+
+    
+
+    <title>Federated Search | Zehai&#39;s page</title>
+    <meta name="author" content="Zehai Wang" />
+    <meta name="version" content="1.0.0" />
+    <meta name="keywords" content="undefined" />
+    <meta name="description" content="It is exciting to participate in the project “Prototyping federated cloud-search for biomedical data” in NIH hackathon. Here, I want to prepare some the conceptual and technical backgound needed for successful hacking.
+The project seems to related to" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+    <meta name="baidu-site-verification" content="F0CXvmUgA9" />
+
+    
+    
+
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+    <div class="app">
+        <header class="header clearfix">
+    <div id="nav" class="nav">
+    <button id="open-panel" class="open-panel"><i class="icon-library"></i></button>
+
+    <nav class="nav-inner">
+
+        
+        
+        <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+        </li>
+        
+        
+        
+        <li class="nav-item">
+            <a class="nav-link" href="/about">About</a>
+        </li>
+        
+        
+        
+        <li class="nav-item">
+            <a class="nav-link" href="/archives">Archives</a>
+        </li>
+        
+        
+        
+        <li class="nav-item">
+            <a class="nav-link" href="/back-end">Data Science</a>
+        </li>
+        
+        
+        
+        <li class="nav-item">
+            <a class="nav-link" href="/zehai_tags">Tags</a>
+        </li>
+        
+        
+        
+
+    </nav>
+</div>
+
+    <aside id="aside" class="aside">
+    <div id="aside-mask" class="aside-mask"></div>
+    <div id="aside-inner" class="aside-inner">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit"><i class="icon-search-stroke"></i></button><input type="hidden" name="sitesearch" value="http://wangz19.github.io"></form>
+
+        
+        
+        
+        
+
+        
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Expectation-from-the-community"><span class="toc-number">1.</span> <span class="toc-text">Expectation from the community</span></a></li></ol>
+        
+    </div>
+</aside>
+
+</header>
+
+        <div id="content" class="content"><article class="article" itemscope itemprop="blogPost">
+    
+    <header class="article-header">
+        
+        <h1 itemprop="name">
+            Federated Search
+        </h1>
+        
+        <div class="article-meta clearfix">
+            <a class="article-date" href="/2018/04/11/Federated-Search/">
+    
+    <i class="icon-calendar"></i>
+    
+    <time datetime="2018-04-11T18:54:19.000Z" itemprop="datePublished">2018-04-11</time>
+</a>
+
+            
+<div class="article-tag-list">
+    <i class="icon-tag"></i>
+    <a class="article-tag-link" href="/tags/Cloud-Search/">Cloud Search;</a>
+</div>
+
+
+        </div>
+    </header>
+    
+    <section class="article-body markdown-body">
+        
+        <p>It is exciting to participate in the project “Prototyping federated cloud-search for biomedical data” in NIH hackathon. Here, I want to prepare some the conceptual and technical backgound needed for successful hacking.</p>
+<p>The project seems to related to the Pilot phase explores using the cloud to access and share FAIR Biomedical Big Data. The objective to to let researchers to find the interact with data directly in the cloud directly.</p>
+<p>###Concepts Define</p>
+<p>First task is to understand the specific terminology employed in the project title. </p>
+<p> “<em>Prototyping of Federated cloud search of biomedical data</em> “</p>
+<p>Key parts of the project, hence, will be “<strong>Search</strong>“ in the <strong>federated cloud</strong> and apply the function directly on <strong>biomedical data</strong>. What is “Federated Search”? How to build search engine? What is the feature of biomedical data compare to other data?</p>
+<p>“<strong>Federated Search</strong>“ : Deloying a seach over distributed and possibly heterogeneous data sets, and receiving in return a unified search results list. Federated cloud have alias as cloud federation and cloud clusters.</p>
+<p>NIH is using a BD2K KnowEnG system deplyed on a public cloud infrastructure to provide easy acess to state of the and and compytationally intensive genomics analysis in a scalable and decentralized manner</p>
+<p><strong>“Search engine”</strong> : bring us closer to data and database on the cloud</p>
+<p><strong>“Biomedical data”</strong>: According to the <nih weisite="">(<a href="https://datascience.nih.gov/bioCADDIE)" target="_blank" rel="noopener">https://datascience.nih.gov/bioCADDIE)</a>. Since it is far more expensive to collect than to analyze data, it is essbecially valuable to anlysis biomedical data uploaded to the commens from the researches. The challanges to use the emerging biomedical data is that :</nih></p>
+<h3 id="Expectation-from-the-community"><a href="#Expectation-from-the-community" class="headerlink" title="Expectation from the community"></a>Expectation from the community</h3><ol>
+<li>Heterogeneous nature of biomedical data;</li>
+<li>Lack of data discover infrastructure;</li>
+<li>Security and authorization;</li>
+<li>Sevice that suppot interoperability between exising biomedical data and tool repositories and portability between cloud service providers.</li>
+<li>Store the data online will enable user to integrate scalable cloud computation and explore the result with interactive visualization.</li>
+</ol>
+
+        
+    </section>
+</article>
+
+
+
+<div class="comments">
+    <div id="disqus_thread">
+    </div>
+    <script>
+    window.disqus_config = function () {
+        this.language = 'en';
+        this.page.url = 'http://wangz19.github.io/2018/04/11/Federated-Search/';
+        this.page.title = 'Federated Search';
+        this.page.identifier = '2018/04/11/Federated-Search/';
+    };
+    (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = 'https://zehai.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+    </script>
+
+</div>
+        <footer class="footer">
+</footer>
+
+<script type="text/javascript" src="//s13.cnzz.com/z_stat.php?id=1234567890&amp;web_id=1234567890"></script>
+
+
+    </div>
+
+    <script type="text/javascript" src="https://cdn.bootcss.com/jquery/1.9.0/jquery.min.js"></script>
+    
+    <script type="text/javascript" src="/js/scrollspy.min.js"></script>
+    
+    <script type="text/javascript">
+        $(function() {
+            var nodes = {
+                nav: $('#nav'),
+                aside: $('#aside'),
+                navTags: $('#nav-tags')
+            };
+
+            $('#open-panel, #aside-mask').on('click', function() {
+                nodes.aside.toggleClass('panel-show');
+            });
+            $('#nav-tag').on('click', function(event) {
+                event.preventDefault();console.log(nodes.navTags.attr('class'))
+                nodes.navTags.toggleClass('tag-show');console.log(nodes.navTags.attr('class'))
+            })/*.hover(function() {
+                nodes.navTags.addClass('tag-show');
+            }, function() {
+                nodes.navTags.removeClass('tag-show');
+            });*/
+
+            
+            $(document.body).scrollspy({target: '#aside-inner'});
+            
+        });
+    </script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+</body>
+</html>
