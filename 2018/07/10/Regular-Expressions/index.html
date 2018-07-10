@@ -7,11 +7,11 @@
 
     
 
-    <title>Zehai&#39;s page</title>
+    <title>Regular Expressions | Zehai&#39;s page</title>
     <meta name="author" content="Zehai Wang" />
     <meta name="version" content="1.0.0" />
     <meta name="keywords" content="" />
-    <meta name="description" content="" />
+    <meta name="description" content="It has been a while since I start using regular expression for NLP and text mining purposes, that decided to give a summary on this topic. The information can also be found on [goolge learning] (https://developers.google.com/edu/python/regular-expres" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
     <meta name="baidu-site-verification" content="F0CXvmUgA9" />
@@ -32,7 +32,7 @@
 
         
         
-        <li class="nav-item active">
+        <li class="nav-item">
             <a class="nav-link" href="/">Home</a>
         </li>
         
@@ -73,41 +73,23 @@
 
         
         
+        
+        
 
         
-        <div class="author-meta">
-            
-            <div class="author-avatar">
-                <a href="/">
-                    <img src="/images/avatar.jpg" title="Zehai">
-                </a>
-            </div>
-            
-            <div class="author-name">Zehai Wang</div>
-            <div class="author-work">Data Scientist &amp Computational Optimization</div>
-            <div class="author-location">
-                <i class="icon-location vm"></i>
-                <span class="vm">Troy, NY</span>
-            </div>
-            <div class="author-thread-wrap">
-                <div class="author-threads clearfix">
-                    <a class="thread-item" href="https://github.com/wangz19" target="_blank"><i class="icon-github"></i></a>
-                </div>
-            </div>
-        </div>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Basic-patterning"><span class="toc-number">1.</span> <span class="toc-text">Basic patterning</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Options"><span class="toc-number">1.1.</span> <span class="toc-text">Options</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Greedy-and-non-Greedy"><span class="toc-number">1.2.</span> <span class="toc-text">Greedy and non-Greedy</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Substitution"><span class="toc-number">2.</span> <span class="toc-text">Substitution</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Baby-name-Exercise"><span class="toc-number">3.</span> <span class="toc-text">Baby name Exercise</span></a></li></ol>
         
     </div>
 </aside>
 
 </header>
 
-        <div id="content" class="content">
-    <article class="article" itemscope itemprop="blogPost">
+        <div id="content" class="content"><article class="article" itemscope itemprop="blogPost">
     
     <header class="article-header">
         
         <h1 itemprop="name">
-            <a href="/2018/07/10/Regular-Expressions/">Regular Expressions</a>
+            Regular Expressions
         </h1>
         
         <div class="article-meta clearfix">
@@ -183,413 +165,24 @@
 </article>
 
 
-    <article class="article" itemscope itemprop="blogPost">
-    
-    <header class="article-header">
-        
-        <h1 itemprop="name">
-            <a href="/2018/04/19/NCBI-Hackathon/">NCBI Hackathon &#34;You are awesome&#34;</a>
-        </h1>
-        
-        <div class="article-meta clearfix">
-            <a class="article-date" href="/2018/04/19/NCBI-Hackathon/">
-    
-    <i class="icon-calendar"></i>
-    
-    <time datetime="2018-04-19T15:58:11.000Z" itemprop="datePublished">2018-04-19</time>
-</a>
 
-            
-<div class="article-tag-list">
-    <i class="icon-tag"></i>
-    <a class="article-tag-link" href="/tags/EMR-Data-parsing/">EMR, Data parsing</a>
-</div>
-
-
-        </div>
-    </header>
-    
-    <section class="article-body markdown-body">
-        
-        <p>It is a great honor to be elected to participate into the NIH NCBI hackathon. A lot of talented faculties, investigators from bioinformatics, neurology, immulogy, physics gather at NIH campus at Bethedas, MD. During the three-day event, my team evisioned a data pipeline that bridges clinical and academic word, called CLINT. </p>
-<p><strong>CLINT</strong>, as we vision, is a data gathering and query pipeline that will parse electronic medical record (EMR) reports, interface with Neurosynth to produce a list of symptoms correlated to structures or structures correlated to symptoms queried and return a report in an EMR ingestible format. More details can be found in our <a href="https://github.com/NCBI-Hackathons/clint" target="_blank" rel="noopener">GitHub repo</a>.</p>
-<p><img src="wangz19.github.io/images/Busy_v4.jpg" alt="coding time"></p>
-<p>Here is what I get from this awesome events:</p>
-<h5 id="Coding-styles-are-especially-important-for-teamwork"><a href="#Coding-styles-are-especially-important-for-teamwork" class="headerlink" title="Coding styles are especially important for teamwork"></a>Coding styles are especially important for teamwork</h5><ol>
-<li>Use “four space” instead of </li>
-<li>Use </li>
-</ol>
-<h5 id="“Tmux”-is-your-friend-when-during-with-large-dataset"><a href="#“Tmux”-is-your-friend-when-during-with-large-dataset" class="headerlink" title="“Tmux” is your friend when during with large dataset."></a>“Tmux” is your friend when during with large dataset.</h5><ol>
-<li>During the hack, we use datasets as much as 25 GB, which take 20 mins to load to the server memory. It would be a disaster </li>
-</ol>
-<h5 id="My-intersts-in-text-mining-and-natural-language-processing"><a href="#My-intersts-in-text-mining-and-natural-language-processing" class="headerlink" title="My intersts in text mining and natural language processing"></a>My intersts in text mining and natural language processing</h5><ol>
-<li><p>The major task the parse the SNOMED condition occurance is </p>
-</li>
-<li><p>Try practical ways of steming and lemmatization, removing n-grams…, More details will discuss in future repo.</p>
-<p>​</p>
-</li>
-</ol>
-
-        
-    </section>
-</article>
-
-
-    <article class="article" itemscope itemprop="blogPost">
-    
-    <header class="article-header">
-        
-        <h1 itemprop="name">
-            <a href="/2018/04/11/Federated-Search/">Federated Search</a>
-        </h1>
-        
-        <div class="article-meta clearfix">
-            <a class="article-date" href="/2018/04/11/Federated-Search/">
-    
-    <i class="icon-calendar"></i>
-    
-    <time datetime="2018-04-11T18:54:19.000Z" itemprop="datePublished">2018-04-11</time>
-</a>
-
-            
-<div class="article-tag-list">
-    <i class="icon-tag"></i>
-    <a class="article-tag-link" href="/tags/Cloud-Search/">Cloud Search;</a>
-</div>
-
-
-        </div>
-    </header>
-    
-    <section class="article-body markdown-body">
-        
-        <p>It is exciting to participate in the project “Prototyping federated cloud-search for biomedical data” in NIH hackathon. Here, I want to prepare some the conceptual and technical backgound needed for successful hacking.</p>
-<p>The project seems to related to the Pilot phase explores using the cloud to access and share FAIR Biomedical Big Data. The objective to to let researchers to find the interact with data directly in the cloud directly.</p>
-<p>###Concepts Define</p>
-<p>First task is to understand the specific terminology employed in the project title. </p>
-<p> “<em>Prototyping of Federated cloud search of biomedical data</em> “</p>
-<p>Key parts of the project, hence, will be “<strong>Search</strong>“ in the <strong>federated cloud</strong> and apply the function directly on <strong>biomedical data</strong>. What is “Federated Search”? How to build search engine? What is the feature of biomedical data compare to other data?</p>
-<p>“<strong>Federated Search</strong>“ : Deloying a seach over distributed and possibly heterogeneous data sets, and receiving in return a unified search results list. Federated cloud have alias as cloud federation and cloud clusters.</p>
-<p>NIH is using a BD2K KnowEnG system deplyed on a public cloud infrastructure to provide easy acess to state of the and and compytationally intensive genomics analysis in a scalable and decentralized manner</p>
-<p><strong>“Search engine”</strong> : bring us closer to data and database on the cloud</p>
-<p><strong>“Biomedical data”</strong>: According to the <nih weisite="">(<a href="https://datascience.nih.gov/bioCADDIE)" target="_blank" rel="noopener">https://datascience.nih.gov/bioCADDIE)</a>. Since it is far more expensive to collect than to analyze data, it is essbecially valuable to anlysis biomedical data uploaded to the commens from the researches. The challanges to use the emerging biomedical data is that :</nih></p>
-<h3 id="Expectation-from-the-community"><a href="#Expectation-from-the-community" class="headerlink" title="Expectation from the community"></a>Expectation from the community</h3><ol>
-<li>Heterogeneous nature of biomedical data;</li>
-<li>Lack of data discover infrastructure;</li>
-<li>Security and authorization;</li>
-<li>Sevice that suppot interoperability between exising biomedical data and tool repositories and portability between cloud service providers.</li>
-<li>Store the data online will enable user to integrate scalable cloud computation and explore the result with interactive visualization.</li>
-</ol>
-
-        
-    </section>
-</article>
-
-
-    <article class="article" itemscope itemprop="blogPost">
-    
-    <header class="article-header">
-        
-        <h1 itemprop="name">
-            <a href="/2018/03/30/Advise-for-formal-Python-Programming/">Advise for formal Python Programming</a>
-        </h1>
-        
-        <div class="article-meta clearfix">
-            <a class="article-date" href="/2018/03/30/Advise-for-formal-Python-Programming/">
-    
-    <i class="icon-calendar"></i>
-    
-    <time datetime="2018-03-30T21:05:25.000Z" itemprop="datePublished">2018-03-30</time>
-</a>
-
-            
-
-        </div>
-    </header>
-    
-    <section class="article-body markdown-body">
-        
-        
-        
-    </section>
-</article>
-
-
-    <article class="article" itemscope itemprop="blogPost">
-    
-    <header class="article-header">
-        
-        <h1 itemprop="name">
-            <a href="/2018/03/18/about/">about</a>
-        </h1>
-        
-        <div class="article-meta clearfix">
-            <a class="article-date" href="/2018/03/18/about/">
-    
-    <i class="icon-calendar"></i>
-    
-    <time datetime="2018-03-18T16:49:21.000Z" itemprop="datePublished">2018-03-18</time>
-</a>
-
-            
-
-        </div>
-    </header>
-    
-    <section class="article-body markdown-body">
-        
-        
-        
-    </section>
-</article>
-
-
-    <article class="article" itemscope itemprop="blogPost">
-    
-    <header class="article-header">
-        
-        <h1 itemprop="name">
-            <a href="/2018/03/16/Algorithm_evaluation-and-optimization/">Evaluation and optimization of a machine leaning alogrithm</a>
-        </h1>
-        
-        <div class="article-meta clearfix">
-            <a class="article-date" href="/2018/03/16/Algorithm_evaluation-and-optimization/">
-    
-    <i class="icon-calendar"></i>
-    
-    <time datetime="2018-03-16T15:48:24.000Z" itemprop="datePublished">2018-03-16</time>
-</a>
-
-            
-<div class="article-tag-list">
-    <i class="icon-tag"></i>
-    <a class="article-tag-link" href="/tags/Machine-Learning/">Machine Learning</a>
-</div>
-
-
-        </div>
-    </header>
-    
-    <section class="article-body markdown-body">
-        
-        <p>The hypothesis may be overfitting the training sets (usually takes 70% data set). We need cross validation set and test set to evaluate and test current learning algorithm. Status of the algorithm can be evaluated using the <a href="https://www.dataquest.io/blog/learning-curves-machine-learning/" target="_blank" rel="noopener">learning curve</a> ploting the cost of cross_validation and training sets.</p>
-<p>Evaluation of test error:</p>
-<ul>
-<li><p>Linear regression: $$J_{test}(\theta) = \frac{1}{2m_{test}}\sum_{i=1}^{m_{test}}(h_\theta(x_{test}^{(i)}-y_{test}^{(i)})^2])$$ </p>
-</li>
-<li><p>Classicfication: $$J_{error}(\theta) = \frac{1}{m_{test}}\sum_{i=1}^{m_{test}}err(h_\theta(x_{test}^{(i)}),y_{test}^{(i)})$$ </p>
-<p>where, $$err(h_\theta(x),y) = 1$$, if $h_{\theta}(x)&gt; 0.5$ $and$ $y= 0$ or $h_{\theta}(x)&lt;0.5$ $and$ $ y= 1$ ( make sure how to write otherwise)</p>
-</li>
-<li><p>Diagnosing bias or variance</p>
-</li>
-</ul>
-<table class="table">
-<thead>
-<tr>
-<th style="text-align:center">High Bias</th>
-<th style="text-align:center">High Variation</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">Under-fitting</td>
-<td style="text-align:center">Overfitting</td>
-</tr>
-<tr>
-<td style="text-align:center">$J_{train}(\theta)$  is high; $J_{cv}(\theta)\approx J_{train}(\theta) $</td>
-<td style="text-align:center">$J_{train}(\theta)$  is low; $J_{cv}(\theta) &gt;&gt; J_{train}(\theta) $</td>
-</tr>
-<tr>
-<td style="text-align:center"><strong>decrease $\lambda$</strong>; <strong>more features</strong>; <strong>Adding polynomial features</strong></td>
-<td style="text-align:center"><strong>increase $\lambda$ </strong>; <strong>Less features</strong> ; <strong>Increase training set size</strong></td>
-</tr>
-</tbody>
-</table>
-
-<h3 id="Design-ML-systems-example"><a href="#Design-ML-systems-example" class="headerlink" title="Design ML systems, example"></a>Design ML systems, example</h3><p><em><strong>Spam email classifier</strong></em></p>
-<ul>
-<li>Define a feature: choose spam word list (deal, buy, discount, …), can be sorted alphabetically</li>
-<li>Vectorized the email content into a list and check if the spam words are in the list.</li>
-<li>Input of a training example consist a vector $X=[0,1,0,1…1,0]$ indicating whether the “spam words” apears.</li>
-<li>Optimization method:<ul>
-<li>More data</li>
-<li>Features based on header</li>
-<li>Spell checking</li>
-</ul>
-</li>
-<li>Error analysis<ul>
-<li>Start with simple, quick, dirty algorithm</li>
-<li>Plot learning curves</li>
-<li>Error analysis:<ul>
-<li>Manual examimation: <em>classification</em>, numerical evaluation, </li>
-<li>Skewed classes: ratio of positive and negative example is too extreme, —use precision/recall</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<p><strong>F score</strong></p>
-<p>We need to define a proper threshold value as cutoff for our hypothesis (for instance, the usually choice of 0.5 in <a href="https://en.wikipedia.org/wiki/Logistic_regression" target="_blank" rel="noopener">logistic regression model</a>), $g(z)$ bigger than the threshold are consider true prediction. If the threshold is big ($&gt;0.5$) we have the risk of putting too much positive case in false prediction group, which is call <strong>high recall</strong>. Otherwise, if threshild is small, </p>
-<p>Precision (P) an d Recall number (R): recall here means (true positive) over No. of actural positive. To evaluate the current threshold, we use F score to evaluate.</p>
-<p>$$F_1=\frac{2PR}{(P+R)}$$</p>
-<p>Always use cross validation set to test whether the</p>
-
-        
-    </section>
-</article>
-
-
-    <article class="article" itemscope itemprop="blogPost">
-    
-    <header class="article-header">
-        
-        <h1 itemprop="name">
-            <a href="/2018/03/16/deploy-MathJax-on-Github-pages/">Deploy MathJax on your Github page</a>
-        </h1>
-        
-        <div class="article-meta clearfix">
-            <a class="article-date" href="/2018/03/16/deploy-MathJax-on-Github-pages/">
-    
-    <i class="icon-calendar"></i>
-    
-    <time datetime="2018-03-16T14:37:10.000Z" itemprop="datePublished">2018-03-16</time>
-</a>
-
-            
-<div class="article-tag-list">
-    <i class="icon-tag"></i>
-    <a class="article-tag-link" href="/tags/Markdown/">Markdown</a>
-</div>
-
-
-        </div>
-    </header>
-    
-    <section class="article-body markdown-body">
-        
-        <p>I have been struggling rendering math equations my github pages for a while, and finally got a good solution from a note posted on <a href="https://github.com/hexojs/hexo-math/issues/26" target="_blank" rel="noopener">the discussion here in zhongpu’s page</a>. I decided to share it here, to remind myself as well as helping others experience same problem.</p>
-<p>Depend on which theme you choose the developer may use different math renderer. Here I recommend <a href="https://www.mathjax.org/" target="_blank" rel="noopener">$mathjax$</a> which is compatible with the <a href="https://typora.io/" target="_blank" rel="noopener">typora</a> markdown editor.</p>
-<p>Basically, you have to first clear you hexo public folder</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br></pre></td></tr></table></figure>
-<p>and then install the install new renderer by bash command</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-render-mathjax --save</span><br></pre></td></tr></table></figure>
-<p>Run as root/administrator when necessary</p>
-<p>Advance features in typora (i.e. table) can also be rendered. Add plug-in </p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-tag-table-bootstrap --save</span><br></pre></td></tr></table></figure>
-<p>and remember to include:</p>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;% table %&#125;</span><br><span class="line"></span><br><span class="line">... body of the table</span><br><span class="line"></span><br><span class="line">&#123;% endtable %&#125;</span><br></pre></td></tr></table></figure>
-<p>at the begining and end of your table.</p>
-<p>You can add more features like <a href="https://www.npmjs.com/package/hexo-filter-flowchart" target="_blank" rel="noopener">flowchat</a> and <a href="https://github.com/wzpan/hexo-renderer-pandoc" target="_blank" rel="noopener">pandoc</a> features in your page. Welcome new discussion if you find more exciting features.</p>
-
-        
-    </section>
-</article>
-
-
-    <article class="article" itemscope itemprop="blogPost">
-    
-    <header class="article-header">
-        
-        <h1 itemprop="name">
-            <a href="/2018/03/16/SVM-notes/">SVM notes</a>
-        </h1>
-        
-        <div class="article-meta clearfix">
-            <a class="article-date" href="/2018/03/16/SVM-notes/">
-    
-    <i class="icon-calendar"></i>
-    
-    <time datetime="2018-03-16T14:27:10.000Z" itemprop="datePublished">2018-03-16</time>
-</a>
-
-            
-
-        </div>
-    </header>
-    
-    <section class="article-body markdown-body">
-        
-        
-        
-    </section>
-</article>
-
-
-    <article class="article" itemscope itemprop="blogPost">
-    
-    <header class="article-header">
-        
-        <h1 itemprop="name">
-            <a href="/2018/02/18/Notes-on-Neural-Network/">Notes on Neural Network</a>
-        </h1>
-        
-        <div class="article-meta clearfix">
-            <a class="article-date" href="/2018/02/18/Notes-on-Neural-Network/">
-    
-    <i class="icon-calendar"></i>
-    
-    <time datetime="2018-02-19T03:54:07.000Z" itemprop="datePublished">2018-02-18</time>
-</a>
-
-            
-<div class="article-tag-list">
-    <i class="icon-tag"></i>
-    <a class="article-tag-link" href="/tags/Machine-Learning/">Machine Learning</a>
-</div>
-
-
-        </div>
-    </header>
-    
-    <section class="article-body markdown-body">
-        
-        <p>Neural Networks are old algorithms dated back to 80s and early 90s. It recent resurgence follows the explosion of computational power.</p>
-<ul>
-<li>Can be applied to learning problem with large feature space (n &gt; 1000)</li>
-<li>If the network has $S_j$ units in layer j, $S_j+1$ units in layer j+1, then matrix of weight controlling function $\theta$ is $S_{j+1} (S_j+1) $</li>
-<li>Generally the hidden layers have same unit number</li>
-</ul>
-
-        
-    </section>
-</article>
-
-
-    <article class="article" itemscope itemprop="blogPost">
-    
-    <header class="article-header">
-        
-        <h1 itemprop="name">
-            <a href="/2018/02/16/Welcome-to-my-site/">Welcome to my site</a>
-        </h1>
-        
-        <div class="article-meta clearfix">
-            <a class="article-date" href="/2018/02/16/Welcome-to-my-site/">
-    
-    <i class="icon-calendar"></i>
-    
-    <time datetime="2018-02-16T17:47:54.000Z" itemprop="datePublished">2018-02-16</time>
-</a>
-
-            
-
-        </div>
-    </header>
-    
-    <section class="article-body markdown-body">
-        
-        
-        
-    </section>
-</article>
-
-
-
-
-<nav class="page-nav">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Suivant &raquo;</a>
-</nav>
-
+<div class="comments">
+    <div id="disqus_thread">
+    </div>
+    <script>
+    window.disqus_config = function () {
+        this.language = 'en';
+        this.page.url = 'http://wangz19.github.io/2018/07/10/Regular-Expressions/';
+        this.page.title = 'Regular Expressions';
+        this.page.identifier = '2018/07/10/Regular-Expressions/';
+    };
+    (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = 'https://zehai.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+    </script>
 
 </div>
         <footer class="footer">
@@ -601,6 +194,8 @@
     </div>
 
     <script type="text/javascript" src="https://cdn.bootcss.com/jquery/1.9.0/jquery.min.js"></script>
+    
+    <script type="text/javascript" src="/js/scrollspy.min.js"></script>
     
     <script type="text/javascript">
         $(function() {
@@ -622,6 +217,8 @@
                 nodes.navTags.removeClass('tag-show');
             });*/
 
+            
+            $(document.body).scrollspy({target: '#aside-inner'});
             
         });
     </script>
