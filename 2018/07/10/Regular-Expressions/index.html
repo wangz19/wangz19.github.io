@@ -73,7 +73,7 @@
     </p>
   <p class="article-time">
     <time datetime="2018-07-10T14:22:29.000Z" itemprop="datePublished">2018-07-10</time>
-    Updated:<time datetime="2018-07-11T05:18:40.676Z" itemprop="dateModified">2018-07-11</time>
+    Updated:<time datetime="2018-07-11T05:37:31.592Z" itemprop="dateModified">2018-07-11</time>
     
   </p>
 </header>
@@ -87,16 +87,77 @@
 		
 		<p>It has been a while since I start using regular expression for NLP and text mining purposes, that decided to give a summary on this topic. The information can also be found on <a href="https://developers.google.com/edu/python/regular-expressions" target="_blank" rel="noopener">goolge learning</a>.</p>
 <p>Hopefully this can give you a comprehensive hint of regular expression when doing NLP. Comments are welcome!</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">High Bias</th>
+<th style="text-align:center">High Variation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Under-fitting</td>
+<td style="text-align:center">Overfitting</td>
+</tr>
+</tbody>
+</table>
 <h3 id="Basic-patterning"><a href="#Basic-patterning" class="headerlink" title="Basic patterning"></a>Basic patterning</h3><p>It is good habit to start pattern strings with ‘r’ to designate a python ‘raw’ string.</p>
 <ul>
-<li><p>Meta-characters that do not match themselves  . ^ $ * + ? { [ ] \ | ( )</p>
-<p>| Sign                   | Match usage                                                   |<br>| :——————— | :———————————————————— |<br>| “.” (period)           | any single chracter except newline ‘\n’                       |<br>| “\w” (lower)           | “word” character, a letter or digit or underbar, [a-zA-Z0-9_] |<br>| “\W “(upper)           | any non-word character                                        |<br>| “\b”                   | boundary between word and non-word                            |<br>| “\s” (lower)           | single white space, etc. [\n \r \t \f]                        |<br>| “\t”, “\n”, “\f”       | tab, newline, return                                          |<br>| “\d”                   | decimal digit [0-9] inter changable with \w and \s            |<br>| “^ “= start, “$”= end  | match start, end of a string                                  |<br>| “\”                    | inhibit ‘specialness’ of the above character:” \.”  or “\\s”|</p>
-</li>
-<li><p>regular expression ‘re.match’ will return first encounters of the matches</p>
+<li>Meta-characters that do not match themselves  . ^ $ * + ? { [ ] \ | ( )</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Sign</th>
+<th style="text-align:left">Match usage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">“.” (period)</td>
+<td style="text-align:left">any single chracter except newline ‘\n’</td>
+</tr>
+<tr>
+<td style="text-align:left">“\w” (lower)</td>
+<td style="text-align:left">“word” character, a letter or digit or underbar, [a-zA-Z0-9_]</td>
+</tr>
+<tr>
+<td style="text-align:left">“\W “(upper)</td>
+<td style="text-align:left">any non-word character</td>
+</tr>
+<tr>
+<td style="text-align:left">“\b”</td>
+<td style="text-align:left">boundary between word and non-word</td>
+</tr>
+<tr>
+<td style="text-align:left">“\s” (lower)</td>
+<td style="text-align:left">single white space, etc. [\n \r \t \f]</td>
+</tr>
+<tr>
+<td style="text-align:left">“\t”, “\n”, “\f”</td>
+<td style="text-align:left">tab, newline, return</td>
+</tr>
+<tr>
+<td style="text-align:left">“\d”</td>
+<td style="text-align:left">decimal digit [0-9] inter changable with \w and \s</td>
+</tr>
+<tr>
+<td style="text-align:left">“^ “= start, “$”= end</td>
+<td style="text-align:left">match start, end of a string</td>
+</tr>
+<tr>
+<td style="text-align:left">“\”</td>
+<td style="text-align:left">inhibit ‘specialness’ of the above character:” \.”  or “\\s”</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>regular expression ‘re.match’ will return first encounters of the matches</li>
+</ul>
 <figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># match continuous three numbers</span></span><br><span class="line">match = re.search(<span class="string">r'\d\d\d'</span>, <span class="string">'123456'</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> match:</span><br><span class="line">    <span class="keyword">print</span> (<span class="string">'found'</span>, match.group()))</span><br><span class="line"></span><br><span class="line"> output:</span><br><span class="line">truefound <span class="number">123</span></span><br></pre></td></tr></table></figure>
-<p>correct way (preffered expression) for “Repetition”</p>
+<p>  correct way (preffered expression) for “Repetition”</p>
 <figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># find the left most repetition of digits</span></span><br><span class="line">match = re.search(<span class="string">r'\d+'</span>, <span class="string">'123456acc123'</span>)</span><br><span class="line"></span><br><span class="line">output:</span><br><span class="line">    found <span class="number">123456</span></span><br><span class="line"></span><br><span class="line">match = re.findall(<span class="string">r'\d+'</span>, <span class="string">'123456acc123'</span>)</span><br><span class="line"><span class="keyword">if</span> match:</span><br><span class="line">    <span class="keyword">print</span> (<span class="string">'found'</span>, match)</span><br><span class="line"></span><br><span class="line">output:</span><br><span class="line">    found [<span class="string">'123456'</span>, <span class="string">'123'</span>]</span><br></pre></td></tr></table></figure>
-</li>
+<ul>
 <li><p>Repetition</p>
 <ul>
 <li>“+” – 1 or more occurence of the pattern to its left</li>
@@ -109,17 +170,20 @@
 </li>
 <li><p>Square brackets</p>
 <p>“[]” can be used to indicate a set of chars, in either or manners.  in “[ ]” the dot ‘.’ literal means dot sign. </p>
-<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># extract all email address in the file</span></span><br><span class="line">f = open (<span class="string">'test.txt'</span>,<span class="string">'r'</span>)</span><br><span class="line">emails = re.findall(<span class="string">r'[\w.-]+@[\w.-]+'</span>, f.read())</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> emails:</span><br><span class="line">    <span class="keyword">print</span> (<span class="string">'found'</span>, emails)</span><br><span class="line"></span><br><span class="line">output:</span><br><span class="line">    found [<span class="string">'simple@example.com'</span>, <span class="string">'very.common@example.com'</span>, <span class="string">'symbol@example.com'</span>, <span class="string">'other.email-with-hyphen@example.com'</span>]</span><br></pre></td></tr></table></figure>
 </li>
+</ul>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># extract all email address in the file</span></span><br><span class="line">f = open (<span class="string">'test.txt'</span>,<span class="string">'r'</span>)</span><br><span class="line">emails = re.findall(<span class="string">r'[\w.-]+@[\w.-]+'</span>, f.read())</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> emails:</span><br><span class="line">    <span class="keyword">print</span> (<span class="string">'found'</span>, emails)</span><br><span class="line"></span><br><span class="line">output:</span><br><span class="line">    found [<span class="string">'simple@example.com'</span>, <span class="string">'very.common@example.com'</span>, <span class="string">'symbol@example.com'</span>, <span class="string">'other.email-with-hyphen@example.com'</span>]</span><br></pre></td></tr></table></figure>
+<ul>
 <li><p>Group extraction</p>
 <p>The “group” feature of a regular expression allows you to pick out parts of the matching text. Suppose for the emails problem that we want to extract the username and host separately. To do this, add parenthesis ( ) around the username and host in the pattern, like this: r’([\w.-]+)@([\w.-]+)’. In this case, the parenthesis do not change what the pattern will match, instead they establish logical “groups” inside of the match text. On a successful search, match.group(1) is the match text corresponding to the 1st left parenthesis, and match.group(2) is the text corresponding to the 2nd left parenthesis. The plain match.group() is still the whole match text as usual.</p>
+</li>
+</ul>
 <figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># extract user name and the host site as tuples</span></span><br><span class="line">f = open (<span class="string">'test.txt'</span>,<span class="string">'r'</span>)</span><br><span class="line">emails = re.findall(<span class="string">r'([\w.-]+)@([\w.-]+)'</span>, f.read())</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> emails:</span><br><span class="line">    <span class="keyword">for</span> email <span class="keyword">in</span> emails:</span><br><span class="line">        <span class="keyword">print</span> (<span class="string">'username:'</span>, email[<span class="number">0</span>],<span class="string">'\n'</span></span><br><span class="line">            <span class="string">'host:'</span>, email[<span class="number">1</span>],<span class="string">'\n'</span>)</span><br><span class="line"></span><br><span class="line">output:</span><br><span class="line">    username: simple </span><br><span class="line">    host: example.com </span><br><span class="line"></span><br><span class="line">    username: very.common </span><br><span class="line">    host: example.com </span><br><span class="line"></span><br><span class="line">    username: symbol </span><br><span class="line">    host: example.com </span><br><span class="line"></span><br><span class="line">    username: other.email-<span class="keyword">with</span>-hyphen </span><br><span class="line">    host: example.com</span><br></pre></td></tr></table></figure>
-<h4 id="Options"><a href="#Options" class="headerlink" title="Options"></a>Options</h4><p>The option flag is added as an extra argument to the search() or findall() etc., e.g. re.search(pat, str, re.IGNORECASE).</p>
+<h4 id="Options"><a href="#Options" class="headerlink" title="Options"></a>Options</h4><p>  The option flag is added as an extra argument to the search() or findall() etc., e.g. re.search(pat, str, re.IGNORECASE).</p>
 <ul>
 <li><strong>IGNORECASE</strong> – ignore upper/lowercase differences for matching, so ‘a’ matches both ‘a’ and ‘A’.</li>
 <li><strong>DOTALL</strong> – allow dot (.) to match newline – normally it matches anything but newline. This can trip you up – you think .<em> matches everything, but by default it does not go past the end of a line. Note that \s (whitespace) includes newlines, so if you want to match a run of whitespace that may include a newline, you can just use \s</em></li>
-<li><strong>MULTILINE</strong> – Within a string made of many lines, allow ^ and ‘\$’ to match the start and end of each line. Normally ^/$ would just match the start and end of the whole string.</li>
-</ul>
+<li><p><strong>MULTILINE</strong> – Within a string made of many lines, allow ^ and ‘\$’ to match the start and end of each line. Normally ^/$ would just match the start and end of the whole string.</p>
 <h4 id="Greedy-and-non-Greedy"><a href="#Greedy-and-non-Greedy" class="headerlink" title="Greedy and non-Greedy"></a>Greedy and non-Greedy</h4><p>This is optional section which shows a more advanced regular expression technique not needed for the exercises.</p>
 <p>Suppose you have text with tags in it: <b>foo</b> and <i>so on</i></p>
 <p>Suppose you are trying to match each tag with the pattern ‘(&lt;.<em>&gt;)’ – what does it match first?<br>The result is a little surprising, but the greedy aspect of the .</em> causes it to match the whole ‘<b>foo</b> and <i>so on</i>‘ as one big match. The problem is that the .* goes as far as is it can, instead of stopping at the first &gt; (aka it is “greedy”).</p>
