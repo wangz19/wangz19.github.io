@@ -1,630 +1,280 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
+
+ <!DOCTYPE HTML>
+<html >
 <head>
-    <meta charset="UTF-8" />
-
-    
-
-    
-
+  <meta charset="UTF-8">
+  
     <title>Zehai&#39;s page</title>
-    <meta name="author" content="Zehai Wang" />
-    <meta name="version" content="1.0.0" />
-    <meta name="keywords" content="" />
-    <meta name="description" content="" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
-    <meta name="baidu-site-verification" content="F0CXvmUgA9" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
+    
+    <meta name="author" content="Zehai Wang">
     
     
-
+    
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/pacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/pacman.jpg">
+    
     <link rel="stylesheet" href="/css/style.css">
 </head>
-<body>
 
-    <div class="app">
-        <header class="header clearfix">
-    <div id="nav" class="nav">
-    <button id="open-panel" class="open-panel"><i class="icon-library"></i></button>
-
-    <nav class="nav-inner">
-
-        
-        
-        <li class="nav-item active">
-            <a class="nav-link" href="/">Home</a>
-        </li>
-        
-        
-        
-        <li class="nav-item">
-            <a class="nav-link" href="/about">About</a>
-        </li>
-        
-        
-        
-        <li class="nav-item">
-            <a class="nav-link" href="/archives">Archives</a>
-        </li>
-        
-        
-        
-        <li class="nav-item">
-            <a class="nav-link" href="/back-end">Data Science</a>
-        </li>
-        
-        
-        
-        <li class="nav-item">
-            <a class="nav-link" href="/zehai_tags">Tags</a>
-        </li>
-        
-        
-        
-
-    </nav>
+  <body>
+    <header>
+      <div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.svg" alt="Zehai&#39;s page" title="Zehai&#39;s page"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="Zehai&#39;s page">Zehai&#39;s page</a></h1>
+				<h2 class="blog-motto"></h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="Menu">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					
+						<li><a href="/">Home</a></li>
+					
+						<li><a href="/archives">Archives</a></li>
+					
+					<li>
+					
+					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="text" id="search" name="q" autocomplete="off" maxlength="20" placeholder="Search" />
+						<input type="hidden" name="q" value="site:wangz19.github.io">
+					</form>
+					
+					</li>
+				</ul>
+			</nav>			
 </div>
 
-    <aside id="aside" class="aside">
-    <div id="aside-mask" class="aside-mask"></div>
-    <div id="aside-inner" class="aside-inner">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit"><i class="icon-search-stroke"></i></button><input type="hidden" name="sitesearch" value="http://wangz19.github.io"></form>
+    </header>
+    <div id="container">
+      <div id="main">
 
-        
-        
-
-        
-        <div class="author-meta">
-            
-            <div class="author-avatar">
-                <a href="/">
-                    <img src="/images/avatar.jpg" title="Zehai">
-                </a>
-            </div>
-            
-            <div class="author-name">Zehai Wang</div>
-            <div class="author-work">Data Scientist &amp Computational Optimization</div>
-            <div class="author-location">
-                <i class="icon-location vm"></i>
-                <span class="vm">Troy, NY</span>
-            </div>
-            <div class="author-thread-wrap">
-                <div class="author-threads clearfix">
-                    <a class="thread-item" href="https://github.com/wangz19" target="_blank"><i class="icon-github"></i></a>
-                </div>
-            </div>
-        </div>
-        
-    </div>
-</aside>
-
-</header>
-
-        <div id="content" class="content">
-    <article class="article" itemscope itemprop="blogPost">
+  <section class="post" itemscope itemprop="blogPost">
+  
+    <a href="/2018/07/10/Regular-Expressions/" title="Regular Expressions" itemprop="url">
+  
+    <h1 itemprop="name">Regular Expressions</h1>
     
-    <header class="article-header">
+     
+           <p itemprop="description" >It has been a while since I start using regular expression for NLP and text mining purposes, that decided to give a summary on this topic. T</p>
         
-        <h1 itemprop="name">
-            <a href="/2018/07/10/Regular-Expressions/">Regular Expressions</a>
-        </h1>
-        
-        <div class="article-meta clearfix">
-            <a class="article-date" href="/2018/07/10/Regular-Expressions/">
-    
-    <i class="icon-calendar"></i>
     
     <time datetime="2018-07-10T14:22:29.000Z" itemprop="datePublished">2018-07-10</time>
-</a>
+  </a>
+</section>
 
-            
-<div class="article-tag-list">
-    <i class="icon-tag"></i>
-    <a class="article-tag-link" href="/tags/Python-re-NLP/">Python; re; NLP</a>
-</div>
-
-
-        </div>
-    </header>
+  <section class="post" itemscope itemprop="blogPost">
+  
+    <a href="/2018/04/19/NCBI-Hackathon/" title="NCBI Hackathon &#34;You are awesome&#34;" itemprop="url">
+  
+    <h1 itemprop="name">NCBI Hackathon &#34;You are awesome&#34;</h1>
     
-    <section class="article-body markdown-body">
+     
+           <p itemprop="description" >It is a great honor to be elected to participate into the NIH NCBI hackathon. A lot of talented faculties, investigators from bioinformatics</p>
         
-        <p>It has been a while since I start using regular expression for NLP and text mining purposes, that decided to give a summary on this topic. The information can also be found on [goolge learning] (<a href="https://developers.google.com/edu/python/regular-expressions)" target="_blank" rel="noopener">https://developers.google.com/edu/python/regular-expressions)</a>.</p>
-<p>Hopefully this can give you a comprehensive hint of regular expression when doing NLP. Comments are welcome!</p>
-<h3 id="Basic-patterning"><a href="#Basic-patterning" class="headerlink" title="Basic patterning"></a>Basic patterning</h3><p>It is good habit to start pattern strings with ‘r’ to designate a python ‘raw’ string.</p>
-<ul>
-<li><p>Meta-characters that do not match themselves “ . ^ $ * + ? { [ ] \ | ( )”</p>
-<p>| Sign                  | Match usage                                                  |<br>| ——————— | ———————————————————— |<br>| “.” (period)          | any single chracter except newline ‘\n’                      |<br>| “\w” (lower)          | “word” character, a letter or digit or underbar, [a-zA-Z0-9_] |<br>| “\W “(upper)          | any non-word character                                       |<br>| “\b”                  | boundary between word and non-word                           |<br>| “\s” (lower)          | single white space, etc. [\n \r \t \f]                       |<br>| “\t”, “\n”, “\f”      | tab, newline, return                                         |<br>| “\d”                  | decimal digit [0-9] (inter changable with \w and \s)         |<br>| “^ “= start, “$”= end | match start, end of a string                                 |<br>| “\”                   | inhibit ‘specialness’ of the above character:” \.”  or “\\s” |</p>
-</li>
-<li><p>regular expression ‘re.match’ will return first encounters of the matches</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># match continuous three numbers</span></span><br><span class="line">match = re.search(<span class="string">r'\d\d\d'</span>, <span class="string">'123456'</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> match:</span><br><span class="line">    <span class="keyword">print</span> (<span class="string">'found'</span>, match.group()))</span><br><span class="line"></span><br><span class="line"> output:</span><br><span class="line">truefound <span class="number">123</span></span><br></pre></td></tr></table></figure>
-<p>correct way (preffered expression) for “Repetition”</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># find the left most repetition of digits</span></span><br><span class="line">match = re.search(<span class="string">r'\d+'</span>, <span class="string">'123456acc123'</span>)</span><br><span class="line"></span><br><span class="line">output:</span><br><span class="line">    found <span class="number">123456</span></span><br><span class="line"></span><br><span class="line">match = re.findall(<span class="string">r'\d+'</span>, <span class="string">'123456acc123'</span>)</span><br><span class="line"><span class="keyword">if</span> match:</span><br><span class="line">    <span class="keyword">print</span> (<span class="string">'found'</span>, match)</span><br><span class="line"></span><br><span class="line">output:</span><br><span class="line">    found [<span class="string">'123456'</span>, <span class="string">'123'</span>]</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>Repetition</p>
-<ul>
-<li>“+” – 1 or more occurence of the pattern to its left</li>
-<li>‘*’ – 0 or more occurences of the pattern to its left</li>
-<li>“?” – match 0  or 1 occurences of the pattern to its left</li>
-</ul>
-</li>
-<li><p>findall with files</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Open file</span></span><br><span class="line">  f = open(<span class="string">'test.txt'</span>, <span class="string">'r'</span>)</span><br><span class="line">  <span class="comment"># Feed the file text into findall(); it returns a list of all the found strings</span></span><br><span class="line">  strings = re.findall(<span class="string">r'some pattern'</span>, f.read())</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>Square brackets</p>
-<p>“[]” can be used to indicate a set of chars, in either or manners.  in “[ ]” the dot ‘.’ literal means dot sign. </p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># extract all email address in the file</span></span><br><span class="line">f = open (<span class="string">'test.txt'</span>,<span class="string">'r'</span>)</span><br><span class="line">emails = re.findall(<span class="string">r'[\w.-]+@[\w.-]+'</span>, f.read())</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> emails:</span><br><span class="line">    <span class="keyword">print</span> (<span class="string">'found'</span>, emails)</span><br><span class="line"></span><br><span class="line">output:</span><br><span class="line">    found [<span class="string">'simple@example.com'</span>, <span class="string">'very.common@example.com'</span>, <span class="string">'symbol@example.com'</span>, <span class="string">'other.email-with-hyphen@example.com'</span>]</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>Group extraction</p>
-<p>The “group” feature of a regular expression allows you to pick out parts of the matching text. Suppose for the emails problem that we want to extract the username and host separately. To do this, add parenthesis ( ) around the username and host in the pattern, like this: r’([\w.-]+)@([\w.-]+)’. In this case, the parenthesis do not change what the pattern will match, instead they establish logical “groups” inside of the match text. On a successful search, match.group(1) is the match text corresponding to the 1st left parenthesis, and match.group(2) is the text corresponding to the 2nd left parenthesis. The plain match.group() is still the whole match text as usual.</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># extract user name and the host site as tuples</span></span><br><span class="line">f = open (<span class="string">'test.txt'</span>,<span class="string">'r'</span>)</span><br><span class="line">emails = re.findall(<span class="string">r'([\w.-]+)@([\w.-]+)'</span>, f.read())</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> emails:</span><br><span class="line">    <span class="keyword">for</span> email <span class="keyword">in</span> emails:</span><br><span class="line">        <span class="keyword">print</span> (<span class="string">'username:'</span>, email[<span class="number">0</span>],<span class="string">'\n'</span></span><br><span class="line">            <span class="string">'host:'</span>, email[<span class="number">1</span>],<span class="string">'\n'</span>)</span><br><span class="line"></span><br><span class="line">output:</span><br><span class="line">    username: simple </span><br><span class="line">    host: example.com </span><br><span class="line"></span><br><span class="line">    username: very.common </span><br><span class="line">    host: example.com </span><br><span class="line"></span><br><span class="line">    username: symbol </span><br><span class="line">    host: example.com </span><br><span class="line"></span><br><span class="line">    username: other.email-<span class="keyword">with</span>-hyphen </span><br><span class="line">    host: example.com</span><br></pre></td></tr></table></figure>
-<h4 id="Options"><a href="#Options" class="headerlink" title="Options"></a>Options</h4><p>The option flag is added as an extra argument to the search() or findall() etc., e.g. re.search(pat, str, re.IGNORECASE).</p>
-<ul>
-<li><strong>IGNORECASE</strong> – ignore upper/lowercase differences for matching, so ‘a’ matches both ‘a’ and ‘A’.</li>
-<li><strong>DOTALL</strong> – allow dot (.) to match newline – normally it matches anything but newline. This can trip you up – you think .<em> matches everything, but by default it does not go past the end of a line. Note that \s (whitespace) includes newlines, so if you want to match a run of whitespace that may include a newline, you can just use \s</em></li>
-<li><strong>MULTILINE</strong> – Within a string made of many lines, allow ^ and ‘\$’ to match the start and end of each line. Normally ^/$ would just match the start and end of the whole string.</li>
-</ul>
-<h4 id="Greedy-and-non-Greedy"><a href="#Greedy-and-non-Greedy" class="headerlink" title="Greedy and non-Greedy"></a>Greedy and non-Greedy</h4><p>This is optional section which shows a more advanced regular expression technique not needed for the exercises.</p>
-<p>Suppose you have text with tags in it: <b>foo</b> and <i>so on</i></p>
-<p>Suppose you are trying to match each tag with the pattern ‘(&lt;.*&gt;)’ – what does it match first?</p>
-<p>The result is a little surprising, but the greedy aspect of the .<em> causes it to match the whole ‘<b>foo</b> and <i>so on</i>‘ as one big match. The problem is that the .</em> goes as far as is it can, instead of stopping at the first &gt; (aka it is “greedy”).</p>
-<p>There is an extension to regular expression where you add a ? at the end, such as .<em>? or .+?, changing them to be non-greedy. Now they stop as soon as they can. So the pattern ‘(&lt;.</em>?&gt;)’ will get just ‘<b>‘ as the first match, and ‘</b>‘ as the second match, and so on getting each &lt;..&gt; pair in turn. The style is typically that you use a .<em>?, and then immediately its right look for some concrete marker (&gt; in this case) that forces the end of the .</em>? run.</p>
-</li>
-</ul>
-<h3 id="Substitution"><a href="#Substitution" class="headerlink" title="Substitution"></a>Substitution</h3><p>re.sub(‘pat’, ‘replacement’, “string”) </p>
-<p>“\1” and “\2” can represent group sections in the RE</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> re</span><br><span class="line"></span><br><span class="line">str = <span class="string">'purple-alice@google.com, blah_monkey_bob@abc.com blah dishwasher'</span></span><br><span class="line">  <span class="comment">## re.sub(pat, replacement, str) -- returns new string with all replacements,</span></span><br><span class="line">  <span class="comment">## \1 is group(1), \2 group(2) in the replacement</span></span><br><span class="line"><span class="keyword">print</span> (re.sub(<span class="string">r'([\w\.-_]+)@([\w\.-]+)'</span>, <span class="string">r'\1@yo-yo-dyne.com'</span>, str))</span><br><span class="line">  <span class="comment">## purple alice@yo-yo-dyne.com, blah monkey bob@yo-yo-dyne.com blah dishwasher</span></span><br></pre></td></tr></table></figure>
-<h3 id="Baby-name-Exercise"><a href="#Baby-name-Exercise" class="headerlink" title="Baby name Exercise"></a>Baby name Exercise</h3><p>File for the exercise can be downloaded from <a href="https://developers.google.com/edu/python/google-python-exercises.zip" target="_blank" rel="noopener">google-python-exercises.zip</a>. Attached is the solution:</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#!/usr/bin/python</span></span><br><span class="line"><span class="comment"># Copyright 2010 Google Inc.</span></span><br><span class="line"><span class="comment"># Licensed under the Apache License, Version 2.0</span></span><br><span class="line"><span class="comment"># http://www.apache.org/licenses/LICENSE-2.0</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Google's Python Class</span></span><br><span class="line"><span class="comment"># http://code.google.com/edu/languages/google-python-class/</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># solution from zehai wang 07.2018 at RPI</span></span><br><span class="line"><span class="comment"># copy right reserved</span></span><br><span class="line"><span class="comment"># Licensed under the Apache License, Version 2.0</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"><span class="keyword">import</span> re</span><br><span class="line"></span><br><span class="line"><span class="string">"""Baby Names exercise</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">Define the extract_names() function below and change main()</span></span><br><span class="line"><span class="string">to call it.</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">For writing regex, it's nice to include a copy of the target</span></span><br><span class="line"><span class="string">text for inspiration.</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">Here's what the html looks like in the baby.html files:</span></span><br><span class="line"><span class="string">...</span></span><br><span class="line"><span class="string">&lt;h3 align="center"&gt;Popularity in 1990&lt;/h3&gt;</span></span><br><span class="line"><span class="string">....</span></span><br><span class="line"><span class="string">&lt;tr align="right"&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;Michael&lt;/td&gt;&lt;td&gt;Jessica&lt;/td&gt;</span></span><br><span class="line"><span class="string">&lt;tr align="right"&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;Christopher&lt;/td&gt;&lt;td&gt;Ashley&lt;/td&gt;</span></span><br><span class="line"><span class="string">&lt;tr align="right"&gt;&lt;td&gt;3&lt;/td&gt;&lt;td&gt;Matthew&lt;/td&gt;&lt;td&gt;Brittany&lt;/td&gt;</span></span><br><span class="line"><span class="string">...</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">Suggested milestones for incremental development:</span></span><br><span class="line"><span class="string"> -Extract the year and print it</span></span><br><span class="line"><span class="string"> -Extract the names and rank numbers and just print them</span></span><br><span class="line"><span class="string"> -Get the names data into a dict and print it</span></span><br><span class="line"><span class="string"> -Build the [year, 'name rank', ... ] list and print it</span></span><br><span class="line"><span class="string"> -Fix main() to use the extract_names list</span></span><br><span class="line"><span class="string">"""</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">extract_names</span><span class="params">(filename)</span>:</span></span><br><span class="line">  <span class="string">"""</span></span><br><span class="line"><span class="string">  Given a file name for baby.html, returns a list starting with the year string</span></span><br><span class="line"><span class="string">  followed by the name-rank strings in alphabetical order.</span></span><br><span class="line"><span class="string">  ['2006', 'Aaliyah 91', Aaron 57', 'Abagail 895', ' ...]</span></span><br><span class="line"><span class="string">  """</span></span><br><span class="line">  <span class="comment">###------- code start here ------------------###</span></span><br><span class="line">  f = open(filename)</span><br><span class="line">  name_list = re.findall(<span class="string">r'Popularity\sin\s+(\d\d\d\d)&lt;/h3&gt;'</span>, f.read())</span><br><span class="line">  f.seek(<span class="number">0</span>) <span class="comment"># re-initialize the file</span></span><br><span class="line">  names = re.findall(<span class="string">r'&lt;td&gt;(\d+)&lt;/td&gt;&lt;td&gt;(\w+)&lt;/td&gt;'</span>, f.read())</span><br><span class="line">  name_dic = dict((i[<span class="number">1</span>],i[<span class="number">0</span>]) <span class="keyword">for</span> i <span class="keyword">in</span> names)</span><br><span class="line">  <span class="comment"># sort the keys</span></span><br><span class="line">  name_keys = list(name_dic.keys())</span><br><span class="line">  name_keys.sort()</span><br><span class="line">  <span class="keyword">for</span> name <span class="keyword">in</span> name_keys:</span><br><span class="line">    name_list.append(<span class="string">'%s %s'</span>%(name,name_dic[name]))</span><br><span class="line">  </span><br><span class="line">  f.close()</span><br><span class="line">  <span class="comment">###------- code end here ------------------###</span></span><br><span class="line">  <span class="keyword">return</span> name_list</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">main</span><span class="params">()</span>:</span></span><br><span class="line">  <span class="comment"># This command-line parsing code is provided.</span></span><br><span class="line">  <span class="comment"># Make a list of command line arguments, omitting the [0] element</span></span><br><span class="line">  <span class="comment"># which is the script itself.</span></span><br><span class="line">  args = sys.argv[<span class="number">1</span>:]</span><br><span class="line"></span><br><span class="line">  <span class="keyword">if</span> <span class="keyword">not</span> args:</span><br><span class="line">    <span class="keyword">print</span> (<span class="string">'usage: [--summaryfile] file [file ...]'</span>)</span><br><span class="line">    sys.exit(<span class="number">1</span>)</span><br><span class="line"></span><br><span class="line">  <span class="comment"># Notice the summary flag and remove it from args if it is present.</span></span><br><span class="line">  summary = <span class="keyword">False</span></span><br><span class="line">  <span class="keyword">if</span> args[<span class="number">0</span>] == <span class="string">'--summaryfile'</span>:</span><br><span class="line">    summary = <span class="keyword">True</span></span><br><span class="line">    <span class="keyword">del</span> args[<span class="number">0</span>]</span><br><span class="line">  </span><br><span class="line">  <span class="comment">###------- code start here ------------------###</span></span><br><span class="line">  <span class="keyword">if</span> <span class="keyword">not</span> summary:</span><br><span class="line">    <span class="keyword">for</span> file <span class="keyword">in</span> args:</span><br><span class="line">        <span class="comment"># matches = extract_names(file)</span></span><br><span class="line">        names = extract_names(file)</span><br><span class="line">        text = <span class="string">'\n'</span>.join(names) + <span class="string">'\n'</span></span><br><span class="line">        <span class="keyword">print</span> (text)</span><br><span class="line">  <span class="keyword">else</span>:</span><br><span class="line">    <span class="keyword">for</span> file <span class="keyword">in</span> args:</span><br><span class="line">        f = open(<span class="string">'%s.summary'</span>%file,<span class="string">'w'</span>)</span><br><span class="line">        names = extract_names(file)</span><br><span class="line">        text = <span class="string">'\n'</span>.join(names) + <span class="string">'\n'</span></span><br><span class="line">        f.write(text)</span><br><span class="line">        f.close()</span><br><span class="line">  <span class="comment">###------- code end here ------------------###</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">  <span class="comment"># For each filename, get the names, then either print the text output</span></span><br><span class="line">  <span class="comment"># or write it to a summary file</span></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">  main()</span><br></pre></td></tr></table></figure>
-
-        
-    </section>
-</article>
-
-
-    <article class="article" itemscope itemprop="blogPost">
-    
-    <header class="article-header">
-        
-        <h1 itemprop="name">
-            <a href="/2018/04/19/NCBI-Hackathon/">NCBI Hackathon &#34;You are awesome&#34;</a>
-        </h1>
-        
-        <div class="article-meta clearfix">
-            <a class="article-date" href="/2018/04/19/NCBI-Hackathon/">
-    
-    <i class="icon-calendar"></i>
     
     <time datetime="2018-04-19T15:58:11.000Z" itemprop="datePublished">2018-04-19</time>
-</a>
+  </a>
+</section>
 
-            
-<div class="article-tag-list">
-    <i class="icon-tag"></i>
-    <a class="article-tag-link" href="/tags/EMR-Data-parsing/">EMR, Data parsing</a>
-</div>
-
-
-        </div>
-    </header>
+  <section class="post" itemscope itemprop="blogPost">
+  
+    <a href="/2018/04/11/Federated-Search/" title="Federated Search" itemprop="url">
+  
+    <h1 itemprop="name">Federated Search</h1>
     
-    <section class="article-body markdown-body">
+     
+           <p itemprop="description" >It is exciting to participate in the project “Prototyping federated cloud-search for biomedical data” in NIH hackathon. Here, I want to prep</p>
         
-        <p>It is a great honor to be elected to participate into the NIH NCBI hackathon. A lot of talented faculties, investigators from bioinformatics, neurology, immulogy, physics gather at NIH campus at Bethedas, MD. During the three-day event, my team evisioned a data pipeline that bridges clinical and academic word, called CLINT. </p>
-<p><strong>CLINT</strong>, as we vision, is a data gathering and query pipeline that will parse electronic medical record (EMR) reports, interface with Neurosynth to produce a list of symptoms correlated to structures or structures correlated to symptoms queried and return a report in an EMR ingestible format. More details can be found in our <a href="https://github.com/NCBI-Hackathons/clint" target="_blank" rel="noopener">GitHub repo</a>.</p>
-<p><img src="wangz19.github.io/images/Busy_v4.jpg" alt="coding time"></p>
-<p>Here is what I get from this awesome events:</p>
-<h5 id="Coding-styles-are-especially-important-for-teamwork"><a href="#Coding-styles-are-especially-important-for-teamwork" class="headerlink" title="Coding styles are especially important for teamwork"></a>Coding styles are especially important for teamwork</h5><ol>
-<li>Use “four space” instead of </li>
-<li>Use </li>
-</ol>
-<h5 id="“Tmux”-is-your-friend-when-during-with-large-dataset"><a href="#“Tmux”-is-your-friend-when-during-with-large-dataset" class="headerlink" title="“Tmux” is your friend when during with large dataset."></a>“Tmux” is your friend when during with large dataset.</h5><ol>
-<li>During the hack, we use datasets as much as 25 GB, which take 20 mins to load to the server memory. It would be a disaster </li>
-</ol>
-<h5 id="My-intersts-in-text-mining-and-natural-language-processing"><a href="#My-intersts-in-text-mining-and-natural-language-processing" class="headerlink" title="My intersts in text mining and natural language processing"></a>My intersts in text mining and natural language processing</h5><ol>
-<li><p>The major task the parse the SNOMED condition occurance is </p>
-</li>
-<li><p>Try practical ways of steming and lemmatization, removing n-grams…, More details will discuss in future repo.</p>
-<p>​</p>
-</li>
-</ol>
-
-        
-    </section>
-</article>
-
-
-    <article class="article" itemscope itemprop="blogPost">
-    
-    <header class="article-header">
-        
-        <h1 itemprop="name">
-            <a href="/2018/04/11/Federated-Search/">Federated Search</a>
-        </h1>
-        
-        <div class="article-meta clearfix">
-            <a class="article-date" href="/2018/04/11/Federated-Search/">
-    
-    <i class="icon-calendar"></i>
     
     <time datetime="2018-04-11T18:54:19.000Z" itemprop="datePublished">2018-04-11</time>
-</a>
+  </a>
+</section>
 
-            
-<div class="article-tag-list">
-    <i class="icon-tag"></i>
-    <a class="article-tag-link" href="/tags/Cloud-Search/">Cloud Search;</a>
-</div>
-
-
-        </div>
-    </header>
+  <section class="post" itemscope itemprop="blogPost">
+  
+    <a href="/2018/03/18/about/" title="about" itemprop="url">
+  
+    <h1 itemprop="name">about</h1>
     
-    <section class="article-body markdown-body">
+     
+           <p itemprop="description" ></p>
         
-        <p>It is exciting to participate in the project “Prototyping federated cloud-search for biomedical data” in NIH hackathon. Here, I want to prepare some the conceptual and technical backgound needed for successful hacking.</p>
-<p>The project seems to related to the Pilot phase explores using the cloud to access and share FAIR Biomedical Big Data. The objective to to let researchers to find the interact with data directly in the cloud directly.</p>
-<p>###Concepts Define</p>
-<p>First task is to understand the specific terminology employed in the project title. </p>
-<p> “<em>Prototyping of Federated cloud search of biomedical data</em> “</p>
-<p>Key parts of the project, hence, will be “<strong>Search</strong>“ in the <strong>federated cloud</strong> and apply the function directly on <strong>biomedical data</strong>. What is “Federated Search”? How to build search engine? What is the feature of biomedical data compare to other data?</p>
-<p>“<strong>Federated Search</strong>“ : Deloying a seach over distributed and possibly heterogeneous data sets, and receiving in return a unified search results list. Federated cloud have alias as cloud federation and cloud clusters.</p>
-<p>NIH is using a BD2K KnowEnG system deplyed on a public cloud infrastructure to provide easy acess to state of the and and compytationally intensive genomics analysis in a scalable and decentralized manner</p>
-<p><strong>“Search engine”</strong> : bring us closer to data and database on the cloud</p>
-<p><strong>“Biomedical data”</strong>: According to the <nih weisite="">(<a href="https://datascience.nih.gov/bioCADDIE)" target="_blank" rel="noopener">https://datascience.nih.gov/bioCADDIE)</a>. Since it is far more expensive to collect than to analyze data, it is essbecially valuable to anlysis biomedical data uploaded to the commens from the researches. The challanges to use the emerging biomedical data is that :</nih></p>
-<h3 id="Expectation-from-the-community"><a href="#Expectation-from-the-community" class="headerlink" title="Expectation from the community"></a>Expectation from the community</h3><ol>
-<li>Heterogeneous nature of biomedical data;</li>
-<li>Lack of data discover infrastructure;</li>
-<li>Security and authorization;</li>
-<li>Sevice that suppot interoperability between exising biomedical data and tool repositories and portability between cloud service providers.</li>
-<li>Store the data online will enable user to integrate scalable cloud computation and explore the result with interactive visualization.</li>
-</ol>
-
-        
-    </section>
-</article>
-
-
-    <article class="article" itemscope itemprop="blogPost">
-    
-    <header class="article-header">
-        
-        <h1 itemprop="name">
-            <a href="/2018/03/30/Advise-for-formal-Python-Programming/">Advise for formal Python Programming</a>
-        </h1>
-        
-        <div class="article-meta clearfix">
-            <a class="article-date" href="/2018/03/30/Advise-for-formal-Python-Programming/">
-    
-    <i class="icon-calendar"></i>
-    
-    <time datetime="2018-03-30T21:05:25.000Z" itemprop="datePublished">2018-03-30</time>
-</a>
-
-            
-
-        </div>
-    </header>
-    
-    <section class="article-body markdown-body">
-        
-        
-        
-    </section>
-</article>
-
-
-    <article class="article" itemscope itemprop="blogPost">
-    
-    <header class="article-header">
-        
-        <h1 itemprop="name">
-            <a href="/2018/03/18/about/">about</a>
-        </h1>
-        
-        <div class="article-meta clearfix">
-            <a class="article-date" href="/2018/03/18/about/">
-    
-    <i class="icon-calendar"></i>
     
     <time datetime="2018-03-18T16:49:21.000Z" itemprop="datePublished">2018-03-18</time>
-</a>
+  </a>
+</section>
 
-            
-
-        </div>
-    </header>
+  <section class="post" itemscope itemprop="blogPost">
+  
+    <a href="/2018/03/16/Algorithm_evaluation-and-optimization/" title="Evaluation and optimization of a machine leaning alogrithm" itemprop="url">
+  
+    <h1 itemprop="name">Evaluation and optimization of a machine leaning alogrithm</h1>
     
-    <section class="article-body markdown-body">
+     
+           <p itemprop="description" >The hypothesis may be overfitting the training sets (usually takes 70% data set). We need cross validation set and test set to evaluate and </p>
         
-        
-        
-    </section>
-</article>
-
-
-    <article class="article" itemscope itemprop="blogPost">
-    
-    <header class="article-header">
-        
-        <h1 itemprop="name">
-            <a href="/2018/03/16/Algorithm_evaluation-and-optimization/">Evaluation and optimization of a machine leaning alogrithm</a>
-        </h1>
-        
-        <div class="article-meta clearfix">
-            <a class="article-date" href="/2018/03/16/Algorithm_evaluation-and-optimization/">
-    
-    <i class="icon-calendar"></i>
     
     <time datetime="2018-03-16T15:48:24.000Z" itemprop="datePublished">2018-03-16</time>
-</a>
+  </a>
+</section>
 
-            
-<div class="article-tag-list">
-    <i class="icon-tag"></i>
-    <a class="article-tag-link" href="/tags/Machine-Learning/">Machine Learning</a>
-</div>
-
-
-        </div>
-    </header>
+  <section class="post" itemscope itemprop="blogPost">
+  
+    <a href="/2018/03/16/deploy-MathJax-on-Github-pages/" title="Deploy MathJax on your Github page" itemprop="url">
+  
+    <h1 itemprop="name">Deploy MathJax on your Github page</h1>
     
-    <section class="article-body markdown-body">
+     
+           <p itemprop="description" >I have been struggling rendering math equations my github pages for a while, and finally got a good solution from a note posted on the discu</p>
         
-        <p>The hypothesis may be overfitting the training sets (usually takes 70% data set). We need cross validation set and test set to evaluate and test current learning algorithm. Status of the algorithm can be evaluated using the <a href="https://www.dataquest.io/blog/learning-curves-machine-learning/" target="_blank" rel="noopener">learning curve</a> ploting the cost of cross_validation and training sets.</p>
-<p>Evaluation of test error:</p>
-<ul>
-<li><p>Linear regression: $$J_{test}(\theta) = \frac{1}{2m_{test}}\sum_{i=1}^{m_{test}}(h_\theta(x_{test}^{(i)}-y_{test}^{(i)})^2])$$ </p>
-</li>
-<li><p>Classicfication: $$J_{error}(\theta) = \frac{1}{m_{test}}\sum_{i=1}^{m_{test}}err(h_\theta(x_{test}^{(i)}),y_{test}^{(i)})$$ </p>
-<p>where, $$err(h_\theta(x),y) = 1$$, if $h_{\theta}(x)&gt; 0.5$ $and$ $y= 0$ or $h_{\theta}(x)&lt;0.5$ $and$ $ y= 1$ ( make sure how to write otherwise)</p>
-</li>
-<li><p>Diagnosing bias or variance</p>
-</li>
-</ul>
-<table class="table">
-<thead>
-<tr>
-<th style="text-align:center">High Bias</th>
-<th style="text-align:center">High Variation</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">Under-fitting</td>
-<td style="text-align:center">Overfitting</td>
-</tr>
-<tr>
-<td style="text-align:center">$J_{train}(\theta)$  is high; $J_{cv}(\theta)\approx J_{train}(\theta) $</td>
-<td style="text-align:center">$J_{train}(\theta)$  is low; $J_{cv}(\theta) &gt;&gt; J_{train}(\theta) $</td>
-</tr>
-<tr>
-<td style="text-align:center"><strong>decrease $\lambda$</strong>; <strong>more features</strong>; <strong>Adding polynomial features</strong></td>
-<td style="text-align:center"><strong>increase $\lambda$ </strong>; <strong>Less features</strong> ; <strong>Increase training set size</strong></td>
-</tr>
-</tbody>
-</table>
-
-<h3 id="Design-ML-systems-example"><a href="#Design-ML-systems-example" class="headerlink" title="Design ML systems, example"></a>Design ML systems, example</h3><p><em><strong>Spam email classifier</strong></em></p>
-<ul>
-<li>Define a feature: choose spam word list (deal, buy, discount, …), can be sorted alphabetically</li>
-<li>Vectorized the email content into a list and check if the spam words are in the list.</li>
-<li>Input of a training example consist a vector $X=[0,1,0,1…1,0]$ indicating whether the “spam words” apears.</li>
-<li>Optimization method:<ul>
-<li>More data</li>
-<li>Features based on header</li>
-<li>Spell checking</li>
-</ul>
-</li>
-<li>Error analysis<ul>
-<li>Start with simple, quick, dirty algorithm</li>
-<li>Plot learning curves</li>
-<li>Error analysis:<ul>
-<li>Manual examimation: <em>classification</em>, numerical evaluation, </li>
-<li>Skewed classes: ratio of positive and negative example is too extreme, —use precision/recall</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<p><strong>F score</strong></p>
-<p>We need to define a proper threshold value as cutoff for our hypothesis (for instance, the usually choice of 0.5 in <a href="https://en.wikipedia.org/wiki/Logistic_regression" target="_blank" rel="noopener">logistic regression model</a>), $g(z)$ bigger than the threshold are consider true prediction. If the threshold is big ($&gt;0.5$) we have the risk of putting too much positive case in false prediction group, which is call <strong>high recall</strong>. Otherwise, if threshild is small, </p>
-<p>Precision (P) an d Recall number (R): recall here means (true positive) over No. of actural positive. To evaluate the current threshold, we use F score to evaluate.</p>
-<p>$$F_1=\frac{2PR}{(P+R)}$$</p>
-<p>Always use cross validation set to test whether the</p>
-
-        
-    </section>
-</article>
-
-
-    <article class="article" itemscope itemprop="blogPost">
-    
-    <header class="article-header">
-        
-        <h1 itemprop="name">
-            <a href="/2018/03/16/deploy-MathJax-on-Github-pages/">Deploy MathJax on your Github page</a>
-        </h1>
-        
-        <div class="article-meta clearfix">
-            <a class="article-date" href="/2018/03/16/deploy-MathJax-on-Github-pages/">
-    
-    <i class="icon-calendar"></i>
     
     <time datetime="2018-03-16T14:37:10.000Z" itemprop="datePublished">2018-03-16</time>
-</a>
+  </a>
+</section>
 
-            
-<div class="article-tag-list">
-    <i class="icon-tag"></i>
-    <a class="article-tag-link" href="/tags/Markdown/">Markdown</a>
-</div>
-
-
-        </div>
-    </header>
+  <section class="post" itemscope itemprop="blogPost">
+  
+    <a href="/2018/03/16/SVM-notes/" title="SVM notes" itemprop="url">
+  
+    <h1 itemprop="name">SVM notes</h1>
     
-    <section class="article-body markdown-body">
+     
+           <p itemprop="description" ></p>
         
-        <p>I have been struggling rendering math equations my github pages for a while, and finally got a good solution from a note posted on <a href="https://github.com/hexojs/hexo-math/issues/26" target="_blank" rel="noopener">the discussion here in zhongpu’s page</a>. I decided to share it here, to remind myself as well as helping others experience same problem.</p>
-<p>Depend on which theme you choose the developer may use different math renderer. Here I recommend <a href="https://www.mathjax.org/" target="_blank" rel="noopener">$mathjax$</a> which is compatible with the <a href="https://typora.io/" target="_blank" rel="noopener">typora</a> markdown editor.</p>
-<p>Basically, you have to first clear you hexo public folder</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br></pre></td></tr></table></figure>
-<p>and then install the install new renderer by bash command</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-render-mathjax --save</span><br></pre></td></tr></table></figure>
-<p>Run as root/administrator when necessary</p>
-<p>Advance features in typora (i.e. table) can also be rendered. Add plug-in </p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-tag-table-bootstrap --save</span><br></pre></td></tr></table></figure>
-<p>and remember to include:</p>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;% table %&#125;</span><br><span class="line"></span><br><span class="line">... body of the table</span><br><span class="line"></span><br><span class="line">&#123;% endtable %&#125;</span><br></pre></td></tr></table></figure>
-<p>at the begining and end of your table.</p>
-<p>You can add more features like <a href="https://www.npmjs.com/package/hexo-filter-flowchart" target="_blank" rel="noopener">flowchat</a> and <a href="https://github.com/wzpan/hexo-renderer-pandoc" target="_blank" rel="noopener">pandoc</a> features in your page. Welcome new discussion if you find more exciting features.</p>
-
-        
-    </section>
-</article>
-
-
-    <article class="article" itemscope itemprop="blogPost">
-    
-    <header class="article-header">
-        
-        <h1 itemprop="name">
-            <a href="/2018/03/16/SVM-notes/">SVM notes</a>
-        </h1>
-        
-        <div class="article-meta clearfix">
-            <a class="article-date" href="/2018/03/16/SVM-notes/">
-    
-    <i class="icon-calendar"></i>
     
     <time datetime="2018-03-16T14:27:10.000Z" itemprop="datePublished">2018-03-16</time>
-</a>
-
-            
-
-        </div>
-    </header>
-    
-    <section class="article-body markdown-body">
-        
-        
-        
-    </section>
-</article>
+  </a>
+</section>
 
 
-    <article class="article" itemscope itemprop="blogPost">
-    
-    <header class="article-header">
-        
-        <h1 itemprop="name">
-            <a href="/2018/02/18/Notes-on-Neural-Network/">Notes on Neural Network</a>
-        </h1>
-        
-        <div class="article-meta clearfix">
-            <a class="article-date" href="/2018/02/18/Notes-on-Neural-Network/">
-    
-    <i class="icon-calendar"></i>
-    
-    <time datetime="2018-02-19T03:54:07.000Z" itemprop="datePublished">2018-02-18</time>
-</a>
+  <nav id="page-nav" class="clearfix">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
+  </nav>
 
-            
-<div class="article-tag-list">
-    <i class="icon-tag"></i>
-    <a class="article-tag-link" href="/tags/Machine-Learning/">Machine Learning</a>
+</div>
+      <div class="openaside"><a class="navbutton" href="#" title="Show Sidebar"></a></div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="Hide Sidebar"></a></div>
+<aside class="clearfix">
+
+  
+
+  
+<div class="tagslist">
+	<p class="asidetitle">Tags</p>
+		<ul class="clearfix">
+		
+			<li><a href="/tags/Cloud-Search/" title="Cloud Search;">Cloud Search;<sup>1</sup></a></li>
+		
+			<li><a href="/tags/EMR-Data-parsing/" title="EMR, Data parsing">EMR, Data parsing<sup>1</sup></a></li>
+		
+			<li><a href="/tags/Machine-Learning/" title="Machine Learning">Machine Learning<sup>2</sup></a></li>
+		
+			<li><a href="/tags/Markdown/" title="Markdown">Markdown<sup>1</sup></a></li>
+		
+			<li><a href="/tags/Python-re-NLP/" title="Python, re, NLP">Python, re, NLP<sup>1</sup></a></li>
+		
+		</ul>
 </div>
 
 
-        </div>
-    </header>
-    
-    <section class="article-body markdown-body">
-        
-        <p>Neural Networks are old algorithms dated back to 80s and early 90s. It recent resurgence follows the explosion of computational power.</p>
-<ul>
-<li>Can be applied to learning problem with large feature space (n &gt; 1000)</li>
-<li>If the network has $S_j$ units in layer j, $S_j+1$ units in layer j+1, then matrix of weight controlling function $\theta$ is $S_{j+1} (S_j+1) $</li>
-<li>Generally the hidden layers have same unit number</li>
-</ul>
-
-        
-    </section>
-</article>
-
-
-    <article class="article" itemscope itemprop="blogPost">
-    
-    <header class="article-header">
-        
-        <h1 itemprop="name">
-            <a href="/2018/02/16/Welcome-to-my-site/">Welcome to my site</a>
-        </h1>
-        
-        <div class="article-meta clearfix">
-            <a class="article-date" href="/2018/02/16/Welcome-to-my-site/">
-    
-    <i class="icon-calendar"></i>
-    
-    <time datetime="2018-02-16T17:47:54.000Z" itemprop="datePublished">2018-02-16</time>
-</a>
-
-            
-
-        </div>
-    </header>
-    
-    <section class="article-body markdown-body">
-        
-        
-        
-    </section>
-</article>
-
-
-
-
-<nav class="page-nav">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Suivant &raquo;</a>
-</nav>
-
-
+  <div class="rsspart">
+	<a href="" target="_blank" title="rss">RSS</a>
 </div>
-        <footer class="footer">
-</footer>
 
-<script type="text/javascript" src="//s13.cnzz.com/z_stat.php?id=1234567890&amp;web_id=1234567890"></script>
-
-
+</aside>
+</div>
     </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<div class="social-font clearfix">
+		
+		
+		
+		<a href="https://github.com/wangz19" target="_blank" title="github"></a>
+		
+		
+		
+        <a href="https://www.linkedin.com/wangz19" target="_blank" title="linkedin"></a>
+        
+	</div>
+		<p class="copyright">Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/A-limon/pacman" target="_blank" title="Pacman">Pacman</a> © 2018 
+		
+		<a href="http://wangz19.github.io" target="_blank" title="Zehai Wang">Zehai Wang</a>
+		
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.1.0.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else
+    {
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+        
+    }
+  });
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+});
+</script>
 
-    <script type="text/javascript" src="https://cdn.bootcss.com/jquery/1.9.0/jquery.min.js"></script>
-    
-    <script type="text/javascript">
-        $(function() {
-            var nodes = {
-                nav: $('#nav'),
-                aside: $('#aside'),
-                navTags: $('#nav-tags')
-            };
 
-            $('#open-panel, #aside-mask').on('click', function() {
-                nodes.aside.toggleClass('panel-show');
-            });
-            $('#nav-tag').on('click', function(event) {
-                event.preventDefault();console.log(nodes.navTags.attr('class'))
-                nodes.navTags.toggleClass('tag-show');console.log(nodes.navTags.attr('class'))
-            })/*.hover(function() {
-                nodes.navTags.addClass('tag-show');
-            }, function() {
-                nodes.navTags.removeClass('tag-show');
-            });*/
 
-            
-        });
-    </script>
 
-</body>
-</html>
+
+
+
+  </body>
+ </html>

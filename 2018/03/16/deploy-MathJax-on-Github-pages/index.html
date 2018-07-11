@@ -1,212 +1,340 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
+
+ <!DOCTYPE HTML>
+<html >
 <head>
-    <meta charset="UTF-8" />
-
-    
-
-    
-
+  <meta charset="UTF-8">
+  
     <title>Deploy MathJax on your Github page | Zehai&#39;s page</title>
-    <meta name="author" content="Zehai Wang" />
-    <meta name="version" content="1.0.0" />
-    <meta name="keywords" content="" />
-    <meta name="description" content="I have been struggling rendering math equations my github pages for a while, and finally got a good solution from a note posted on the discussion here in zhongpu’s page. I decided to share it here, to remind myself as well as helping others experienc" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
-    <meta name="baidu-site-verification" content="F0CXvmUgA9" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
+    
+    <meta name="author" content="Zehai Wang">
+    
+    <meta name="description" content="I have been struggling rendering math equations my github pages for a while, and finally got a good solution from a note posted on the discussion here">
     
     
-
+    
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/pacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/pacman.jpg">
+    
     <link rel="stylesheet" href="/css/style.css">
 </head>
-<body>
 
-    <div class="app">
-        <header class="header clearfix">
-    <div id="nav" class="nav">
-    <button id="open-panel" class="open-panel"><i class="icon-library"></i></button>
-
-    <nav class="nav-inner">
-
-        
-        
-        <li class="nav-item">
-            <a class="nav-link" href="/">Home</a>
-        </li>
-        
-        
-        
-        <li class="nav-item">
-            <a class="nav-link" href="/about">About</a>
-        </li>
-        
-        
-        
-        <li class="nav-item">
-            <a class="nav-link" href="/archives">Archives</a>
-        </li>
-        
-        
-        
-        <li class="nav-item">
-            <a class="nav-link" href="/back-end">Data Science</a>
-        </li>
-        
-        
-        
-        <li class="nav-item">
-            <a class="nav-link" href="/zehai_tags">Tags</a>
-        </li>
-        
-        
-        
-
-    </nav>
+  <body>
+    <header>
+      <div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.svg" alt="Zehai&#39;s page" title="Zehai&#39;s page"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="Zehai&#39;s page">Zehai&#39;s page</a></h1>
+				<h2 class="blog-motto"></h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="Menu">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					
+						<li><a href="/">Home</a></li>
+					
+						<li><a href="/archives">Archives</a></li>
+					
+					<li>
+					
+					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="text" id="search" name="q" autocomplete="off" maxlength="20" placeholder="Search" />
+						<input type="hidden" name="q" value="site:wangz19.github.io">
+					</form>
+					
+					</li>
+				</ul>
+			</nav>			
 </div>
 
-    <aside id="aside" class="aside">
-    <div id="aside-mask" class="aside-mask"></div>
-    <div id="aside-inner" class="aside-inner">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit"><i class="icon-search-stroke"></i></button><input type="hidden" name="sitesearch" value="http://wangz19.github.io"></form>
-
-        
-        
-        
-        
-
-        
-        <div class="author-meta">
-            
-            <div class="author-avatar">
-                <a href="/">
-                    <img src="/images/avatar.jpg" title="Zehai">
-                </a>
-            </div>
-            
-            <div class="author-name">Zehai Wang</div>
-            <div class="author-work">Data Scientist &amp Computational Optimization</div>
-            <div class="author-location">
-                <i class="icon-location vm"></i>
-                <span class="vm">Troy, NY</span>
-            </div>
-            <div class="author-thread-wrap">
-                <div class="author-threads clearfix">
-                    <a class="thread-item" href="https://github.com/wangz19" target="_blank"><i class="icon-github"></i></a>
-                </div>
-            </div>
-        </div>
-        
-    </div>
-</aside>
-
-</header>
-
-        <div id="content" class="content"><article class="article" itemscope itemprop="blogPost">
-    
-    <header class="article-header">
-        
-        <h1 itemprop="name">
-            Deploy MathJax on your Github page
-        </h1>
-        
-        <div class="article-meta clearfix">
-            <a class="article-date" href="/2018/03/16/deploy-MathJax-on-Github-pages/">
-    
-    <i class="icon-calendar"></i>
-    
-    <time datetime="2018-03-16T14:37:10.000Z" itemprop="datePublished">2018-03-16</time>
-</a>
-
-            
-<div class="article-tag-list">
-    <i class="icon-tag"></i>
-    <a class="article-tag-link" href="/tags/Markdown/">Markdown</a>
-</div>
-
-
-        </div>
     </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
     
-    <section class="article-body markdown-body">
-        
-        <p>I have been struggling rendering math equations my github pages for a while, and finally got a good solution from a note posted on <a href="https://github.com/hexojs/hexo-math/issues/26" target="_blank" rel="noopener">the discussion here in zhongpu’s page</a>. I decided to share it here, to remind myself as well as helping others experience same problem.</p>
+      <a href="/2018/03/16/deploy-MathJax-on-Github-pages/" title="Deploy MathJax on your Github page" itemprop="url">Deploy MathJax on your Github page</a>
+  </h1>
+  <p class="article-author">By
+    
+      <a href="http://wangz19.github.io" title="Zehai Wang">Zehai Wang</a>
+    </p>
+  <p class="article-time">
+    <time datetime="2018-03-16T14:37:10.000Z" itemprop="datePublished">2018-03-16</time>
+    Updated:<time datetime="2018-03-16T16:20:19.228Z" itemprop="dateModified">2018-03-16</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">Contents</strong>
+		
+		</div>
+		
+		<p>I have been struggling rendering math equations my github pages for a while, and finally got a good solution from a note posted on <a href="https://github.com/hexojs/hexo-math/issues/26" target="_blank" rel="noopener">the discussion here in zhongpu’s page</a>. I decided to share it here, to remind myself as well as helping others experience same problem.</p>
 <p>Depend on which theme you choose the developer may use different math renderer. Here I recommend <a href="https://www.mathjax.org/" target="_blank" rel="noopener">$mathjax$</a> which is compatible with the <a href="https://typora.io/" target="_blank" rel="noopener">typora</a> markdown editor.</p>
 <p>Basically, you have to first clear you hexo public folder</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo clean</span><br></pre></td></tr></table></figure>
 <p>and then install the install new renderer by bash command</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-render-mathjax --save</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-render-mathjax --save</span><br></pre></td></tr></table></figure>
 <p>Run as root/administrator when necessary</p>
 <p>Advance features in typora (i.e. table) can also be rendered. Add plug-in </p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-tag-table-bootstrap --save</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-tag-table-bootstrap --save</span><br></pre></td></tr></table></figure>
 <p>and remember to include:</p>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;% table %&#125;</span><br><span class="line"></span><br><span class="line">... body of the table</span><br><span class="line"></span><br><span class="line">&#123;% endtable %&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% table %&#125;</span><br><span class="line"></span><br><span class="line">... body of the table</span><br><span class="line"></span><br><span class="line">&#123;% endtable %&#125;</span><br></pre></td></tr></table></figure>
 <p>at the begining and end of your table.</p>
 <p>You can add more features like <a href="https://www.npmjs.com/package/hexo-filter-flowchart" target="_blank" rel="noopener">flowchat</a> and <a href="https://github.com/wzpan/hexo-renderer-pandoc" target="_blank" rel="noopener">pandoc</a> features in your page. Welcome new discussion if you find more exciting features.</p>
+  
+	</div>
+		<footer class="article-footer clearfix">
 
-        
-    </section>
-</article>
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/Markdown/">Markdown</a>
+  </div>
 
 
 
-<div class="comments">
-    <div id="disqus_thread">
-    </div>
-    <script>
-    window.disqus_config = function () {
-        this.language = 'en';
-        this.page.url = 'http://wangz19.github.io/2018/03/16/deploy-MathJax-on-Github-pages/';
-        this.page.title = 'Deploy MathJax on your Github page';
-        this.page.identifier = '2018/03/16/deploy-MathJax-on-Github-pages/';
-    };
-    (function() { // DON'T EDIT BELOW THIS LINE
-        var d = document, s = d.createElement('script');
-        s.src = 'https://zehai.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-    </script>
+
+<div class="article-share" id="share">
+
+  <div data-url="http://wangz19.github.io/2018/03/16/deploy-MathJax-on-Github-pages/" data-title="Deploy MathJax on your Github page | Zehai&#39;s page" data-tsina="" class="share clearfix">
+  </div>
 
 </div>
-        <footer class="footer">
-</footer>
+</footer>   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/2018/03/16/Algorithm_evaluation-and-optimization/" title="Evaluation and optimization of a machine leaning alogrithm">
+  <strong>PREVIOUS:</strong><br/>
+  <span>
+  Evaluation and optimization of a machine leaning alogrithm</span>
+</a>
+</div>
 
-<script type="text/javascript" src="//s13.cnzz.com/z_stat.php?id=1234567890&amp;web_id=1234567890"></script>
+
+<div class="next">
+<a href="/2018/03/16/SVM-notes/"  title="SVM notes">
+ <strong>NEXT:</strong><br/> 
+ <span>SVM notes
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="Show Sidebar"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">Contents</strong>
+  
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="Hide Sidebar"></a></div>
+<aside class="clearfix">
+
+  
+
+  
+<div class="tagslist">
+	<p class="asidetitle">Tags</p>
+		<ul class="clearfix">
+		
+			<li><a href="/tags/Cloud-Search/" title="Cloud Search;">Cloud Search;<sup>1</sup></a></li>
+		
+			<li><a href="/tags/EMR-Data-parsing/" title="EMR, Data parsing">EMR, Data parsing<sup>1</sup></a></li>
+		
+			<li><a href="/tags/Machine-Learning/" title="Machine Learning">Machine Learning<sup>2</sup></a></li>
+		
+			<li><a href="/tags/Markdown/" title="Markdown">Markdown<sup>1</sup></a></li>
+		
+			<li><a href="/tags/Python-re-NLP/" title="Python, re, NLP">Python, re, NLP<sup>1</sup></a></li>
+		
+		</ul>
+</div>
 
 
+  <div class="rsspart">
+	<a href="" target="_blank" title="rss">RSS</a>
+</div>
+
+</aside>
+</div>
     </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<div class="social-font clearfix">
+		
+		
+		
+		<a href="https://github.com/wangz19" target="_blank" title="github"></a>
+		
+		
+		
+        <a href="https://www.linkedin.com/wangz19" target="_blank" title="linkedin"></a>
+        
+	</div>
+		<p class="copyright">Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/A-limon/pacman" target="_blank" title="Pacman">Pacman</a> © 2018 
+		
+		<a href="http://wangz19.github.io" target="_blank" title="Zehai Wang">Zehai Wang</a>
+		
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.1.0.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else
+    {
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+});
+</script>
 
-    <script type="text/javascript" src="https://cdn.bootcss.com/jquery/1.9.0/jquery.min.js"></script>
-    
-    <script type="text/javascript" src="/js/scrollspy.min.js"></script>
-    
-    <script type="text/javascript">
-        $(function() {
-            var nodes = {
-                nav: $('#nav'),
-                aside: $('#aside'),
-                navTags: $('#nav-tags')
-            };
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      h  = $('article h2')
+      ah = $('article h2'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  if(ah.length==0){
+    t.css('display','none');
+  }else{
+    c.click(function(){
+      ta.css('display', 'block').addClass('fadeIn');
+    });
+    o.click(function(){
+      ta.css('display', 'none');
+    });
+    $(window).scroll(function(){
+      ta.css("top",Math.max(140,320-$(this).scrollTop()));
+    });
+  };
+});
+</script>
 
-            $('#open-panel, #aside-mask').on('click', function() {
-                nodes.aside.toggleClass('panel-show');
-            });
-            $('#nav-tag').on('click', function(event) {
-                event.preventDefault();console.log(nodes.navTags.attr('class'))
-                nodes.navTags.toggleClass('tag-show');console.log(nodes.navTags.attr('class'))
-            })/*.hover(function() {
-                nodes.navTags.addClass('tag-show');
-            }, function() {
-                nodes.navTags.removeClass('tag-show');
-            });*/
 
-            
-            $(document.body).scrollspy({target: '#aside-inner'});
-            
-        });
-    </script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina');
+  var html = [
+  '<a href="#" class="overlay" id="qrcode"></a>',
+  '<div class="qrcode clearfix"><span>扫描二维码分享到微信朋友圈</span><a class="qrclose" href="#share"></a><strong>Loading...Please wait</strong><img id="qrcode-pic" data-src="http://s.jiathis.com/qrcode.php?url=' + encodedUrl + '"/></div>',
+  '<a href="#textlogo" class="article-back-to-top" title="Top"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="QRcode"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="Weibo"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+  $('.article-share-qrcode').click(function(){
+    var imgSrc = $('#qrcode-pic').attr('data-src');
+    $('#qrcode-pic').attr('src', imgSrc);
+    $('#qrcode-pic').load(function(){
+        $('.qrcode strong').text(' ');
+    });
+  });
+});     
+</script>
 
+
+
+
+
+
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 </body>
 </html>
