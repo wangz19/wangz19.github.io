@@ -24,7 +24,7 @@
       <div>
 		
 			<div id="imglogo">
-				<a href="/"><img src="/img/astro.jpg" alt="Zehai" title="Zehai"/></a>
+				<a href="/"><img src="/img/astro_1.jpg" alt="Zehai" title="Zehai"/></a>
 			</div>
 			
 			<div id="textlogo">
@@ -41,8 +41,6 @@
 						<li><a href="/categories">Projects</a></li>
 					
 						<li><a href="/archives">Archives</a></li>
-					
-						<li><a href="/tags">Machine Learning</a></li>
 					
 					<li>
 					
@@ -87,14 +85,14 @@
 		<p>I have been struggling rendering math equations my github pages for a while, and finally got a good solution from a note posted on <a href="https://github.com/hexojs/hexo-math/issues/26" target="_blank" rel="noopener">the discussion here in zhongpu’s page</a>. I decided to share it here, to remind myself as well as helping others experience same problem.</p>
 <p>Depend on which theme you choose the developer may use different math renderer. Here I recommend <a href="https://www.mathjax.org/" target="_blank" rel="noopener">$mathjax$</a> which is compatible with the <a href="https://typora.io/" target="_blank" rel="noopener">typora</a> markdown editor.</p>
 <p>Basically, you have to first clear you hexo public folder</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br></pre></td></tr></table></figure>
+<p></p><p class="code-caption" data-lang="bash" data-line_number="frontend" data-trim_indent="backend" data-label_position="outer" data-labels_left="Code" data-labels_right=":" data-labels_copy="Copy Code"><span class="code-caption-label"></span><a class="code-caption-copy">Copy Code</a></p><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br></pre></td></tr></table></figure><p></p>
 <p>and then install the install new renderer by bash command</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-render-mathjax --save</span><br></pre></td></tr></table></figure>
+<p></p><p class="code-caption" data-lang="bash" data-line_number="frontend" data-trim_indent="backend" data-label_position="outer" data-labels_left="Code" data-labels_right=":" data-labels_copy="Copy Code"><span class="code-caption-label"></span><a class="code-caption-copy">Copy Code</a></p><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-render-mathjax --save</span><br></pre></td></tr></table></figure><p></p>
 <p>Run as root/administrator when necessary</p>
 <p>Advance features in typora (i.e. table) can also be rendered. Add plug-in </p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-tag-table-bootstrap --save</span><br></pre></td></tr></table></figure>
+<p></p><p class="code-caption" data-lang="bash" data-line_number="frontend" data-trim_indent="backend" data-label_position="outer" data-labels_left="Code" data-labels_right=":" data-labels_copy="Copy Code"><span class="code-caption-label"></span><a class="code-caption-copy">Copy Code</a></p><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-tag-table-bootstrap --save</span><br></pre></td></tr></table></figure><p></p>
 <p>and remember to include:</p>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;% table %&#125;</span><br><span class="line"></span><br><span class="line">... body of the table</span><br><span class="line"></span><br><span class="line">&#123;% endtable %&#125;</span><br></pre></td></tr></table></figure>
+<p></p><p class="code-caption" data-lang="markdown" data-line_number="frontend" data-trim_indent="backend" data-label_position="outer" data-labels_left="Code" data-labels_right=":" data-labels_copy="Copy Code"><span class="code-caption-label"></span><a class="code-caption-copy">Copy Code</a></p><br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;% table %&#125;</span><br><span class="line"></span><br><span class="line">... body of the table</span><br><span class="line"></span><br><span class="line">&#123;% endtable %&#125;</span><br></pre></td></tr></table></figure><p></p>
 <p>at the begining and end of your table.</p>
 <p>You can add more features like <a href="https://www.npmjs.com/package/hexo-filter-flowchart" target="_blank" rel="noopener">flowchat</a> and <a href="https://github.com/wzpan/hexo-renderer-pandoc" target="_blank" rel="noopener">pandoc</a> features in your page. Welcome new discussion if you find more exciting features.</p>
   

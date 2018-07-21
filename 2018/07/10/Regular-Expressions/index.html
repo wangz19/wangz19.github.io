@@ -24,7 +24,7 @@
       <div>
 		
 			<div id="imglogo">
-				<a href="/"><img src="/img/astro.jpg" alt="Zehai" title="Zehai"/></a>
+				<a href="/"><img src="/img/astro_1.jpg" alt="Zehai" title="Zehai"/></a>
 			</div>
 			
 			<div id="textlogo">
@@ -41,8 +41,6 @@
 						<li><a href="/categories">Projects</a></li>
 					
 						<li><a href="/archives">Archives</a></li>
-					
-						<li><a href="/tags">Machine Learning</a></li>
 					
 					<li>
 					
@@ -139,7 +137,7 @@
 <ul>
 <li>regular expression ‘re.match’ will return first encounters of the matches</li>
 </ul>
-<p></p><p class="code-caption" data-lang="py" data-line_number="frontend" data-trim_indent="backend" data-label_position="outer" data-labels_left="Code" data-labels_right=":" data-labels_copy="Copy Code"><span class="code-caption-label"></span><a class="code-caption-copy">Copy Code</a></p><br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># match continuous three numbers</span></span><br><span class="line">match = re.search(<span class="string">r'\d\d\d'</span>, <span class="string">'123456'</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> match:</span><br><span class="line">    <span class="keyword">print</span> (<span class="string">'found'</span>, match.group()))</span><br><span class="line"></span><br><span class="line"> output:</span><br><span class="line">truefound <span class="number">123</span></span><br></pre></td></tr></table></figure><p></p>
+<p></p><p class="code-caption" data-lang="py" data-line_number="frontend" data-trim_indent="backend" data-label_position="outer" data-labels_left="Code" data-labels_right=":" data-labels_copy="Copy Code"><span class="code-caption-label"></span><a class="code-caption-copy">Copy Code</a></p><br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># match continuous three numbers</span></span><br><span class="line">match = re.search(<span class="string">r'\d\d\d'</span>, <span class="string">'123456'</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> match:</span><br><span class="line">    <span class="keyword">print</span> (<span class="string">'found'</span>, match.group()))</span><br><span class="line"></span><br><span class="line"> output:</span><br><span class="line">	found <span class="number">123</span></span><br></pre></td></tr></table></figure><p></p>
 <p>  correct way (preffered expression) for “Repetition”</p>
 <p></p><p class="code-caption" data-lang="py" data-line_number="frontend" data-trim_indent="backend" data-label_position="outer" data-labels_left="Code" data-labels_right=":" data-labels_copy="Copy Code"><span class="code-caption-label"></span><a class="code-caption-copy">Copy Code</a></p><br><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># find the left most repetition of digits</span></span><br><span class="line">match = re.search(<span class="string">r'\d+'</span>, <span class="string">'123456acc123'</span>)</span><br><span class="line"></span><br><span class="line">output:</span><br><span class="line">    found <span class="number">123456</span></span><br><span class="line"></span><br><span class="line">match = re.findall(<span class="string">r'\d+'</span>, <span class="string">'123456acc123'</span>)</span><br><span class="line"><span class="keyword">if</span> match:</span><br><span class="line">    <span class="keyword">print</span> (<span class="string">'found'</span>, match)</span><br><span class="line"></span><br><span class="line">output:</span><br><span class="line">    found [<span class="string">'123456'</span>, <span class="string">'123'</span>]</span><br></pre></td></tr></table></figure><p></p>
 <ul>
