@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://wangz19.github.io/index.html</loc>
+    
+    <lastmod>2019-02-07T18:34:03.491Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wangz19.github.io/about/index.html</loc>
+    
+    <lastmod>2019-02-07T17:50:27.063Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://wangz19.github.io/categories/index.html</loc>
     
     <lastmod>2019-02-07T17:15:41.209Z</lastmod>
@@ -26,20 +40,6 @@
     <loc>http://wangz19.github.io/2018/09/10/testing/</loc>
     
     <lastmod>2018-09-10T19:40:16.239Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://wangz19.github.io/index.html</loc>
-    
-    <lastmod>2018-07-21T22:46:16.199Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://wangz19.github.io/about/index.html</loc>
-    
-    <lastmod>2018-07-21T03:43:44.210Z</lastmod>
     
   </url>
   
