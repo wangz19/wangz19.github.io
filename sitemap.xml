@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://wangz19.github.io/tags/index.html</loc>
+    
+    <lastmod>2019-02-07T22:24:57.733Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://wangz19.github.io/index.html</loc>
     
     <lastmod>2019-02-07T22:14:44.718Z</lastmod>
@@ -54,13 +61,6 @@
     <loc>http://wangz19.github.io/2018/03/16/Algorithm_evaluation-and-optimization/</loc>
     
     <lastmod>2018-07-12T00:26:38.553Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://wangz19.github.io/tags/index.html</loc>
-    
-    <lastmod>2018-07-12T00:05:21.279Z</lastmod>
     
   </url>
   
